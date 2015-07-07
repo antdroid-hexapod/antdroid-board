@@ -1,4 +1,4 @@
-update=Tue 07 Jul 2015 20:38:54 CEST
+update=Tue 07 Jul 2015 21:35:33 CEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -33,3 +33,9 @@ LibName1=mbr745g
 LibName2=antdroid-board
 LibName3=dc-dc
 LibName4=power
+LibName5=conn
+LibName6=device
+LibName7=pinhead
+LibName8=pinhead-1
+LibName9=led
+LibName10=led_rgb
