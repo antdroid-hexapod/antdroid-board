@@ -1,4 +1,4 @@
-update=Thu 09 Jul 2015 03:03:50 CEST
+update=Thu 09 Jul 2015 21:34:56 CEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -39,3 +39,4 @@ LibName7=pinhead-1
 LibName8=led
 LibName9=led_rgb
 LibName10=dc-dc
+LibName11=arduino_shieldsNCL
