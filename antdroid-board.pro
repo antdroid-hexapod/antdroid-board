@@ -1,4 +1,4 @@
-update=Wed 08 Jul 2015 02:33:42 CEST
+update=Thu 09 Jul 2015 03:03:50 CEST
 version=1
 last_client=kicad
 [pcbnew]
@@ -31,11 +31,11 @@ LibDir=/home/alex/antdroid/antdroid-board
 [eeschema/libraries]
 LibName1=mbr745g
 LibName2=antdroid-board
-LibName3=dc-dc
-LibName4=power
-LibName5=conn
-LibName6=device
-LibName7=pinhead
-LibName8=pinhead-1
-LibName9=led
-LibName10=led_rgb
+LibName3=power
+LibName4=conn
+LibName5=device
+LibName6=pinhead
+LibName7=pinhead-1
+LibName8=led
+LibName9=led_rgb
+LibName10=dc-dc
