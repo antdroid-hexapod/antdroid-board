@@ -918,7 +918,6 @@ NoConn ~ 3000 3950
 NoConn ~ 3000 5450
 NoConn ~ 3000 5550
 NoConn ~ 1100 5950
-NoConn ~ 1100 5750
 NoConn ~ 1100 5650
 NoConn ~ 1100 5550
 NoConn ~ 1100 5450
@@ -1177,7 +1176,7 @@ Text Label 9150 1700 2    60   ~ 0
 SERVO_ON
 Text Label 9150 3050 2    60   ~ 0
 SERVO_ON
-Text Label 600  1800 0    60   ~ 0
+Text Label 600  5750 0    60   ~ 0
 SERVO_ON
 Text Label 8700 4550 0    60   ~ 0
 RPI_RX
@@ -1455,7 +1454,7 @@ Wire Wire Line
 Wire Wire Line
 	8650 3050 8650 2950
 Wire Wire Line
-	1100 1800 600  1800
+	1100 5750 600  5750
 Wire Wire Line
 	4750 1100 4350 1100
 Wire Wire Line
@@ -2123,4 +2122,5 @@ NoConn ~ 3000 1150
 NoConn ~ 1100 1400
 NoConn ~ 1100 1500
 NoConn ~ 1100 1600
+NoConn ~ 1100 1800
 $EndSCHEMATC
