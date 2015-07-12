@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MBR745G
+D MBR745 - 7.5A 45V Schottky Barrier Diode
+K MBR745 - 7.5A 45V Schottky Barrier Diode
+F http://www.futurlec.com/Diodes/MBR745G.shtml
+$ENDCMP
+#
+#End Doc Library

@@ -9,6 +9,7 @@ LIBS:led
 LIBS:led_rgb
 LIBS:dc-dc
 LIBS:arduino_shieldsNCL
+LIBS:pinhead-1
 LIBS:antdroid-board-cache
 EELAYER 25 0
 EELAYER END
@@ -863,42 +864,41 @@ F 3 "" H 5600 6600 60  0000 C CNN
 $EndComp
 Text Label 5250 6800 0    60   ~ 0
 RRT
-Text Label 3300 2750 2    60   ~ 0
+Text Label 800  2850 0    60   ~ 0
 LFF
-Text Label 3300 2650 2    60   ~ 0
+Text Label 800  2950 0    60   ~ 0
 LFC
-Text Label 3300 2550 2    60   ~ 0
+Text Label 800  2750 0    60   ~ 0
 LFT
-Text Label 3300 2300 2    60   ~ 0
+Text Label 3300 2750 2    60   ~ 0
 RFC
-Text Label 3300 2200 2    60   ~ 0
+Text Label 3300 2650 2    60   ~ 0
 RFF
-Text Label 3300 2100 2    60   ~ 0
+Text Label 3300 2550 2    60   ~ 0
 RFT
-Text Label 3300 2000 2    60   ~ 0
+Text Label 800  2650 0    60   ~ 0
 LMC
-Text Label 3300 1900 2    60   ~ 0
+Text Label 800  2550 0    60   ~ 0
 LMF
-Text Label 3300 1800 2    60   ~ 0
+Text Label 800  2450 0    60   ~ 0
 LMT
-Text Label 3300 1700 2    60   ~ 0
+Text Label 3300 2450 2    60   ~ 0
 RMC
-Text Label 3300 1600 2    60   ~ 0
+Text Label 3300 2300 2    60   ~ 0
 RMF
-Text Label 3300 1450 2    60   ~ 0
+Text Label 3300 2200 2    60   ~ 0
 RMT
-Text Label 3300 1350 2    60   ~ 0
+Text Label 800  2350 0    60   ~ 0
 LRC
-Text Label 3300 1250 2    60   ~ 0
+Text Label 800  2250 0    60   ~ 0
 LRF
-Text Label 3300 1150 2    60   ~ 0
+Text Label 800  2100 0    60   ~ 0
 LRT
-NoConn ~ 3000 2450
-Text Label 800  1400 0    60   ~ 0
+Text Label 3300 2100 2    60   ~ 0
 RRC
-Text Label 800  1500 0    60   ~ 0
+Text Label 3300 2000 2    60   ~ 0
 RRF
-Text Label 800  1600 0    60   ~ 0
+Text Label 3300 1900 2    60   ~ 0
 RRT
 NoConn ~ 3000 3250
 NoConn ~ 3000 3350
@@ -918,7 +918,6 @@ NoConn ~ 3000 3950
 NoConn ~ 3000 5450
 NoConn ~ 3000 5550
 NoConn ~ 1100 5950
-NoConn ~ 1100 5750
 NoConn ~ 1100 5650
 NoConn ~ 1100 5550
 NoConn ~ 1100 5450
@@ -936,17 +935,6 @@ NoConn ~ 1100 3950
 NoConn ~ 1100 3850
 NoConn ~ 1100 3750
 NoConn ~ 1100 3650
-NoConn ~ 1100 3550
-NoConn ~ 1100 3450
-NoConn ~ 1100 2950
-NoConn ~ 1100 2850
-NoConn ~ 1100 2750
-NoConn ~ 1100 2650
-NoConn ~ 1100 2550
-NoConn ~ 1100 2450
-NoConn ~ 1100 2350
-NoConn ~ 1100 2250
-NoConn ~ 1100 2100
 NoConn ~ 1100 2000
 NoConn ~ 1100 1900
 NoConn ~ 1100 1700
@@ -1188,7 +1176,7 @@ Text Label 9150 1700 2    60   ~ 0
 SERVO_ON
 Text Label 9150 3050 2    60   ~ 0
 SERVO_ON
-Text Label 600  1800 0    60   ~ 0
+Text Label 600  5750 0    60   ~ 0
 SERVO_ON
 Text Label 8700 4550 0    60   ~ 0
 RPI_RX
@@ -1388,41 +1376,41 @@ Wire Wire Line
 Wire Wire Line
 	6000 6800 5250 6800
 Wire Wire Line
+	1100 2850 800  2850
+Wire Wire Line
+	1100 2950 800  2950
+Wire Wire Line
+	1100 2750 800  2750
+Wire Wire Line
 	3000 2750 3300 2750
 Wire Wire Line
 	3000 2650 3300 2650
 Wire Wire Line
 	3000 2550 3300 2550
 Wire Wire Line
+	1100 2650 800  2650
+Wire Wire Line
+	1100 2550 800  2550
+Wire Wire Line
+	1100 2450 800  2450
+Wire Wire Line
+	3000 2450 3300 2450
+Wire Wire Line
 	3000 2300 3300 2300
 Wire Wire Line
 	3000 2200 3300 2200
+Wire Wire Line
+	1100 2350 800  2350
+Wire Wire Line
+	1100 2250 800  2250
+Wire Wire Line
+	1100 2100 800  2100
 Wire Wire Line
 	3000 2100 3300 2100
 Wire Wire Line
 	3000 2000 3300 2000
 Wire Wire Line
 	3000 1900 3300 1900
-Wire Wire Line
-	3000 1800 3300 1800
-Wire Wire Line
-	3000 1700 3300 1700
-Wire Wire Line
-	3000 1600 3300 1600
-Wire Wire Line
-	3000 1450 3300 1450
-Wire Wire Line
-	3000 1350 3300 1350
-Wire Wire Line
-	3000 1250 3300 1250
-Wire Wire Line
-	3000 1150 3300 1150
-Wire Wire Line
-	1100 1400 800  1400
-Wire Wire Line
-	1100 1500 800  1500
-Wire Wire Line
-	1100 1600 800  1600
 Connection ~ 7450 1200
 Wire Wire Line
 	7200 1200 7200 1550
@@ -1466,7 +1454,7 @@ Wire Wire Line
 Wire Wire Line
 	8650 3050 8650 2950
 Wire Wire Line
-	1100 1800 600  1800
+	1100 5750 600  5750
 Wire Wire Line
 	4750 1100 4350 1100
 Wire Wire Line
@@ -1960,21 +1948,21 @@ F 3 "" H 8950 4250 60  0000 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L PWR_FLAG #FLG081
+L PWR_FLAG #FLG080
 U 1 1 55A099EC
-P 850 3300
-F 0 "#FLG081" H 850 3395 50  0001 C CNN
-F 1 "PWR_FLAG" H 850 3480 50  0000 C CNN
-F 2 "" H 850 3300 60  0000 C CNN
-F 3 "" H 850 3300 60  0000 C CNN
-	1    850  3300
-	-1   0    0    1   
+P 850 3200
+F 0 "#FLG080" H 850 3295 50  0001 C CNN
+F 1 "PWR_FLAG" H 850 3380 50  0000 C CNN
+F 2 "" H 850 3200 60  0000 C CNN
+F 3 "" H 850 3200 60  0000 C CNN
+	1    850  3200
+	1    0    0    -1  
 $EndComp
 $Comp
-L +5VP #PWR082
+L +5VP #PWR081
 U 1 1 55A0B5AA
 P 6950 5350
-F 0 "#PWR082" H 6950 5200 50  0001 C CNN
+F 0 "#PWR081" H 6950 5200 50  0001 C CNN
 F 1 "+5VP" H 6950 5500 50  0000 C CNN
 F 2 "" H 6950 5350 60  0000 C CNN
 F 3 "" H 6950 5350 60  0000 C CNN
@@ -1982,10 +1970,10 @@ F 3 "" H 6950 5350 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5VP #PWR083
+L +5VP #PWR082
 U 1 1 55A0B7F4
 P 6950 4150
-F 0 "#PWR083" H 6950 4000 50  0001 C CNN
+F 0 "#PWR082" H 6950 4000 50  0001 C CNN
 F 1 "+5VP" H 6950 4300 50  0000 C CNN
 F 2 "" H 6950 4150 60  0000 C CNN
 F 3 "" H 6950 4150 60  0000 C CNN
@@ -2032,10 +2020,10 @@ Wire Wire Line
 Wire Wire Line
 	3150 4850 3000 4850
 $Comp
-L GND #PWR084
+L GND #PWR083
 U 1 1 55A26536
 P 3150 2950
-F 0 "#PWR084" H 3150 2700 50  0001 C CNN
+F 0 "#PWR083" H 3150 2700 50  0001 C CNN
 F 1 "GND" V 3200 3000 50  0000 C CNN
 F 2 "" H 3150 2950 60  0000 C CNN
 F 3 "" H 3150 2950 60  0000 C CNN
@@ -2048,10 +2036,10 @@ Wire Wire Line
 	3150 2950 3000 2950
 Connection ~ 3000 2950
 $Comp
-L GND #PWR085
+L GND #PWR084
 U 1 1 55A26A0D
 P 950 5850
-F 0 "#PWR085" H 950 5600 50  0001 C CNN
+F 0 "#PWR084" H 950 5600 50  0001 C CNN
 F 1 "GND" V 900 5900 50  0000 C CNN
 F 2 "" H 950 5850 60  0000 C CNN
 F 3 "" H 950 5850 60  0000 C CNN
@@ -2066,21 +2054,73 @@ Wire Wire Line
 	3150 5200 3000 5200
 Connection ~ 3000 5200
 $Comp
-L +5VP #PWR086
+L +5VP #PWR085
 U 1 1 55A2A2AB
-P 750 3200
-F 0 "#PWR086" H 750 3050 50  0001 C CNN
-F 1 "+5VP" V 800 3150 50  0000 C CNN
-F 2 "" H 750 3200 60  0000 C CNN
-F 3 "" H 750 3200 60  0000 C CNN
-	1    750  3200
+P 650 3200
+F 0 "#PWR085" H 650 3050 50  0001 C CNN
+F 1 "+5VP" V 700 3150 50  0000 C CNN
+F 2 "" H 650 3200 60  0000 C CNN
+F 3 "" H 650 3200 60  0000 C CNN
+	1    650  3200
 	0    -1   -1   0   
 $EndComp
 NoConn ~ 1100 3100
 Wire Wire Line
-	1100 3200 750  3200
+	650  3200 1100 3200
 NoConn ~ 3000 5350
 Wire Wire Line
-	850  3300 850  3200
+	850  3200 850  3200
 Connection ~ 850  3200
+Wire Wire Line
+	750  3450 1100 3450
+Wire Wire Line
+	750  3550 1100 3550
+$Comp
+L GND #PWR086
+U 1 1 55A3105F
+P 900 3650
+F 0 "#PWR086" H 900 3400 50  0001 C CNN
+F 1 "GND" V 950 3750 50  0000 C CNN
+F 2 "" H 900 3650 60  0000 C CNN
+F 3 "" H 900 3650 60  0000 C CNN
+	1    900  3650
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	900  3650 750  3650
+Wire Wire Line
+	1050 3350 750  3350
+$Comp
+L +5V #PWR087
+U 1 1 55A33B81
+P 1050 3350
+F 0 "#PWR087" H 1050 3200 50  0001 C CNN
+F 1 "+5V" V 1000 3400 50  0000 C CNN
+F 2 "" H 1050 3350 60  0000 C CNN
+F 3 "" H 1050 3350 60  0000 C CNN
+	1    1050 3350
+	0    1    1    0   
+$EndComp
+$Comp
+L PINHD-1X4_2.54 JP20
+U 1 1 55A377CB
+P 650 3450
+F 0 "JP20" H 400 3775 50  0000 L BNN
+F 1 "PINHD-1X4_2.54" H 200 3850 50  0000 L BNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 650 3600 50  0001 C CNN
+F 3 "" H 650 3450 60  0000 C CNN
+	1    650  3450
+	-1   0    0    1   
+$EndComp
+NoConn ~ 3000 1800
+NoConn ~ 3000 1700
+NoConn ~ 3000 1600
+NoConn ~ 3000 1450
+NoConn ~ 3000 1350
+NoConn ~ 3000 1250
+NoConn ~ 3000 1150
+NoConn ~ 1100 1400
+NoConn ~ 1100 1500
+NoConn ~ 1100 1600
+NoConn ~ 1100 1800
 $EndSCHEMATC

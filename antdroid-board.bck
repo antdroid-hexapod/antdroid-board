@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LM2678T
+D LM2678T 5A Step-Down Voltage Regulator
+K SIMPLE SWITCHER® Step-Down Voltage Regulator 5A
+F www.ti.com/lit/ds/symlink/lm2678.pdf
+$ENDCMP
+#
+$CMP LM2678T-5.0
+D LM2678T-5.0 - 5V 5A Step-Down Voltage Regulator
+K SIMPLE SWITCHER® Step-Down Voltage Regulator 5A
+F www.ti.com/lit/ds/symlink/lm2678.pdf
+$ENDCMP
+#
+#End Doc Library
