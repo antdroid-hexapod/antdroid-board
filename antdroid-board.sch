@@ -113,8 +113,7 @@ F 0 "U1" H 8150 1650 50  0000 L CNN
 F 1 "LM2678T-5.0" H 8150 1550 50  0000 L CNN
 F 2 "Power_Integrations:TO-220-7C" H 8850 850 50  0001 C CIN
 F 3 "www.ti.com/lit/ds/symlink/lm2678.pdf" H 8550 1200 50  0001 C CNN
-F 4 "http://futurlec.com/" H 8550 1200 60  0001 C CNN "Suppler"
-F 5 "LM2678T-5" H 8550 1200 60  0001 C CNN "Suppler ref"
+F 4 "LM2678T-5" H 8550 1200 60  0001 C CNN "Supplier and ref"
 	1    8550 1200
 	1    0    0    -1  
 $EndComp
@@ -1006,8 +1005,7 @@ F 0 "U2" H 8150 3000 50  0000 L CNN
 F 1 "LM2678T-5.0" H 8150 2900 50  0000 L CNN
 F 2 "Power_Integrations:TO-220-7C" H 8850 2200 50  0001 C CIN
 F 3 "www.ti.com/lit/ds/symlink/lm2678.pdf" H 8550 2550 50  0001 C CNN
-F 4 "http://futurlec.com" H 8550 2550 60  0001 C CNN "Suppler"
-F 5 "LM2678T-5" H 8550 2550 60  0001 C CNN "Suppler ref"
+F 4 "http://futurlec.com" H 8550 2550 60  0001 C CNN "Supplier and ref"
 	1    8550 2550
 	1    0    0    -1  
 $EndComp
