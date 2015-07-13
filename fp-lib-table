@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name antdroid-board)(type KiCad)(uri "$(KIPRJMOD)/libs/antdroid-board.pretty")(options "")(descr ""))
+)

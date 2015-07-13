@@ -1,0 +1,54 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP +3V3
+K POWER, PWR
+$ENDCMP
+#
+$CMP +5VA
+K POWER, PWR
+$ENDCMP
+#
+$CMP C
+D Unpolarized capacitor
+$ENDCMP
+#
+$CMP CP
+D Polarised capacitor
+$ENDCMP
+#
+$CMP GND
+K POWER, PWR
+$ENDCMP
+#
+$CMP LED
+K LED
+$ENDCMP
+#
+$CMP LM2678T
+D LM2678T 5A Step-Down Voltage Regulator
+K SIMPLE SWITCHER® Step-Down Voltage Regulator 5A
+F www.ti.com/lit/ds/symlink/lm2678.pdf
+$ENDCMP
+#
+$CMP LM2678T-5.0
+D LM2678T-5.0 - 5V 5A Step-Down Voltage Regulator
+K SIMPLE SWITCHER® Step-Down Voltage Regulator 5A
+F www.ti.com/lit/ds/symlink/lm2678.pdf
+$ENDCMP
+#
+$CMP MBR745G
+D MBR745 - 7.5A 45V Schottky Barrier Diode
+K MBR745 - 7.5A 45V Schottky Barrier Diode
+F http://www.futurlec.com/Diodes/MBR745G.shtml
+$ENDCMP
+#
+$CMP R
+D Resistor
+K R DEV
+$ENDCMP
+#
+$CMP VCC
+K POWER, PWR
+$ENDCMP
+#
+#End Doc Library

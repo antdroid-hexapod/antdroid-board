@@ -1,4 +1,4 @@
-update=Sun 12 Jul 2015 23:29:35 CEST
+update=Mon 13 Jul 2015 18:15:05 CEST
 version=1
 last_client=kicad
 [cvpcb]
@@ -27,16 +27,6 @@ BoardOutlineThickness=0.09999999999999999
 ModuleOutlineThickness=0.15
 [eeschema]
 version=1
-LibDir=/home/alex/antdroid/antdroid-board
+LibDir=/home/alex/antdroid/antdroid-board/libs
 [eeschema/libraries]
-LibName1=mbr745g
-LibName2=antdroid-board
-LibName3=power
-LibName4=conn
-LibName5=device
-LibName6=pinhead
-LibName7=led
-LibName8=led_rgb
-LibName9=dc-dc
-LibName10=arduino_shieldsNCL
-LibName11=pinhead-1
+LibName1=antdroid-board

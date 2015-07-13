@@ -1,15 +1,6 @@
 EESchema Schematic File Version 2
-LIBS:mbr745g
 LIBS:antdroid-board
-LIBS:power
-LIBS:conn
-LIBS:device
-LIBS:pinhead
 LIBS:led
-LIBS:led_rgb
-LIBS:dc-dc
-LIBS:arduino_shieldsNCL
-LIBS:pinhead-1
 LIBS:antdroid-board-cache
 EELAYER 25 0
 EELAYER END
@@ -42,7 +33,7 @@ U 1 1 559AC992
 P 7250 4700
 F 0 "Q1" V 7700 4700 50  0000 L CNN
 F 1 "BSS138" V 7600 4550 50  0000 L CNN
-F 2 "Housings_SOT-23_SOT-143_TSOT-6:SOT-23" V 7500 4550 50  0001 L CIN
+F 2 "antdroid-board:SOT-23" V 7500 4550 50  0001 L CIN
 F 3 "" H 7250 4700 50  0000 L CNN
 	1    7250 4700
 	0    -1   1    0   
@@ -53,7 +44,7 @@ U 1 1 559AC9C3
 P 7600 4400
 F 0 "R5" H 7450 4450 50  0000 C CNN
 F 1 "10K" H 7450 4350 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 7530 4400 30  0001 C CNN
+F 2 "antdroid-board:R_0603_HandSoldering" V 7530 4400 30  0001 C CNN
 F 3 "" H 7600 4400 30  0000 C CNN
 	1    7600 4400
 	-1   0    0    -1  
@@ -64,7 +55,7 @@ U 1 1 559AC9EC
 P 6950 4400
 F 0 "R3" H 6800 4450 50  0000 C CNN
 F 1 "10K" H 6800 4350 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 6880 4400 30  0001 C CNN
+F 2 "antdroid-board:R_0603_HandSoldering" V 6880 4400 30  0001 C CNN
 F 3 "" H 6950 4400 30  0000 C CNN
 	1    6950 4400
 	-1   0    0    -1  
@@ -79,7 +70,7 @@ U 1 1 559ADC18
 P 7250 5900
 F 0 "Q2" V 7700 5900 50  0000 L CNN
 F 1 "BSS138" V 7600 5750 50  0000 L CNN
-F 2 "Housings_SOT-23_SOT-143_TSOT-6:SOT-23" V 7500 5750 50  0001 L CIN
+F 2 "antdroid-board:SOT-23" V 7500 5750 50  0001 L CIN
 F 3 "" H 7250 5900 50  0000 L CNN
 	1    7250 5900
 	0    -1   1    0   
@@ -111,7 +102,7 @@ U 1 1 559BFA9D
 P 8550 1200
 F 0 "U1" H 8150 1650 50  0000 L CNN
 F 1 "LM2678T-5.0" H 8150 1550 50  0000 L CNN
-F 2 "Power_Integrations:TO-220-7C" H 8850 850 50  0001 C CIN
+F 2 "antdroid-board:TO-220-7C" H 8850 850 50  0001 C CIN
 F 3 "www.ti.com/lit/ds/symlink/lm2678.pdf" H 8550 1200 50  0001 C CNN
 F 4 "LM2678T-5" H 8550 1200 60  0001 C CNN "Supplier and ref"
 	1    8550 1200
@@ -123,7 +114,7 @@ U 1 1 559C04D2
 P 7450 1700
 F 0 "C3" H 7350 1850 50  0000 L CNN
 F 1 "470µF/25V" H 6900 1600 50  0001 L CNN
-F 2 "Capacitors_ThroughHole:C_Radial_D10_L13_P5" H 7488 1550 30  0001 C CNN
+F 2 "antdroid-board:C_Radial_D10_L13_P5" H 7488 1550 30  0001 C CNN
 F 3 "http://www.futurlec.com/Capacitors/C470U25E.shtml" H 7450 1700 60  0001 C CNN
 	1    7450 1700
 	1    0    0    -1  
@@ -134,7 +125,7 @@ U 1 1 559C0ED0
 P 7850 1700
 F 0 "C5" H 7875 1800 50  0000 L CNN
 F 1 "0.47µF" H 7875 1600 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:C_Disc_D6_P5" H 7888 1550 30  0001 C CNN
+F 2 "antdroid-board:C_Disc_D6_P5" H 7888 1550 30  0001 C CNN
 F 3 "http://www.futurlec.com/Capacitors/C470PC.shtml" H 7850 1700 60  0001 C CNN
 	1    7850 1700
 	1    0    0    -1  
@@ -145,7 +136,7 @@ U 1 1 559C0EA6
 P 9300 1200
 F 0 "C8" V 9450 1200 50  0000 L CNN
 F 1 "0,01µF" V 9150 1100 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 9338 1050 30  0001 C CNN
+F 2 "antdroid-board:C_0603_HandSoldering" H 9338 1050 30  0001 C CNN
 F 3 "http://www.futurlec.com/Capacitors/C010PC.shtml" H 9300 1200 60  0001 C CNN
 	1    9300 1200
 	0    -1   -1   0   
@@ -200,7 +191,7 @@ U 1 1 559C5866
 P 10100 1400
 F 0 "L1" V 10050 1400 50  0000 C CNN
 F 1 "15µH/5.8A" V 10200 1400 50  0000 C CNN
-F 2 "Inductors:SELF-WE-PD-XXL" H 10100 1400 60  0001 C CNN
+F 2 "antdroid-board:SELF-WE-PD-XXL" H 10100 1400 60  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/54/SRR1210-60886.pdf" H 10100 1400 60  0001 C CNN
 	1    10100 1400
 	0    1    1    0   
@@ -211,7 +202,7 @@ U 1 1 559C613B
 P 10550 1700
 F 0 "C11" H 10575 1800 50  0000 L CNN
 F 1 "1000µF/50V" H 10575 1600 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:C_Radial_D12.5_L25_P5" H 10588 1550 30  0001 C CNN
+F 2 "antdroid-board:C_Radial_D12.5_L25_P5" H 10588 1550 30  0001 C CNN
 F 3 "http://www.futurlec.com/Capacitors/C1000U50E.shtml" H 10550 1700 60  0001 C CNN
 	1    10550 1700
 	1    0    0    -1  
@@ -233,7 +224,7 @@ U 1 1 559CE80D
 P 9700 1700
 F 0 "D1" V 9750 1500 50  0000 L BNN
 F 1 "MBR745G" V 9650 1250 50  0000 L BNN
-F 2 "Diodes_ThroughHole:Diode_TO-220_Vertical" H 9700 1850 50  0001 C CNN
+F 2 "antdroid-board:Diode_TO-220_Vertical" H 9700 1850 50  0001 C CNN
 F 3 "http://www.futurlec.com/info.gif" H 9700 1700 60  0001 C CNN
 	1    9700 1700
 	0    -1   -1   0   
@@ -244,7 +235,7 @@ U 1 1 559DA86D
 P 9200 5600
 F 0 "U3" H 8800 6050 50  0000 L CNN
 F 1 "LM2675M-5" H 8800 5950 50  0000 L CNN
-F 2 "ab2_so:AB2_SO08" H 9500 5250 50  0001 C CIN
+F 2 "antdroid-board:AB2_SO08" H 9500 5250 50  0001 C CIN
 F 3 "http://www.futurlec.com/Linear/LM2675.shtml" H 9200 5600 50  0001 C CNN
 	1    9200 5600
 	1    0    0    -1  
@@ -266,7 +257,7 @@ U 1 1 559DB70F
 P 10000 5950
 F 0 "D3" V 10000 5750 50  0000 L BNN
 F 1 "MBRS340" V 9900 5600 50  0000 L BNN
-F 2 "Diodes_SMD:Diode-DO-214AB_Handsoldering" H 10000 6100 50  0001 C CNN
+F 2 "antdroid-board:Diode-DO-214AB_Handsoldering" H 10000 6100 50  0001 C CNN
 F 3 "https://www.fairchildsemi.com/datasheets/MB/MBRS340.pdf" H 10000 5950 60  0001 C CNN
 	1    10000 5950
 	0    -1   -1   0   
@@ -277,7 +268,7 @@ U 1 1 559DBE3A
 P 10450 5800
 F 0 "L3" V 10400 5800 50  0000 C CNN
 F 1 "47µH/2A" V 10550 5800 50  0000 C CNN
-F 2 "Inductors:SELF-WE-PD-XXL" H 10450 5800 60  0001 C CNN
+F 2 "antdroid-board:SELF-WE-PD-XXL" H 10450 5800 60  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/390/CDRH124-465666.pdf" H 10450 5800 60  0001 C CNN
 F 4 "CDRH124NP-470MC" V 10450 5800 60  0001 C CNN "Ref"
 	1    10450 5800
@@ -289,7 +280,7 @@ U 1 1 559DC12E
 P 9850 5600
 F 0 "C10" V 9700 5550 50  0000 L CNN
 F 1 "10nF" V 10000 5500 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 9888 5450 30  0001 C CNN
+F 2 "antdroid-board:C_0603_HandSoldering" H 9888 5450 30  0001 C CNN
 F 3 "" H 9850 5600 60  0000 C CNN
 	1    9850 5600
 	0    1    1    0   
@@ -344,7 +335,7 @@ U 1 1 559E15E2
 P 6950 5600
 F 0 "R4" H 6800 5650 50  0000 C CNN
 F 1 "10K" H 6800 5550 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 6880 5600 30  0001 C CNN
+F 2 "antdroid-board:R_0603_HandSoldering" V 6880 5600 30  0001 C CNN
 F 3 "" H 6950 5600 30  0000 C CNN
 	1    6950 5600
 	-1   0    0    -1  
@@ -355,7 +346,7 @@ U 1 1 559E1682
 P 7600 5600
 F 0 "R6" H 7450 5650 50  0000 C CNN
 F 1 "10K" H 7450 5550 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 7530 5600 30  0001 C CNN
+F 2 "antdroid-board:R_0603_HandSoldering" V 7530 5600 30  0001 C CNN
 F 3 "" H 7600 5600 30  0000 C CNN
 	1    7600 5600
 	-1   0    0    -1  
@@ -405,7 +396,7 @@ U 1 1 559F2B47
 P 10250 4200
 F 0 "R7" V 10330 4200 50  0000 C CNN
 F 1 "R" V 10150 4200 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 10180 4200 30  0001 C CNN
+F 2 "antdroid-board:R_0603_HandSoldering" V 10180 4200 30  0001 C CNN
 F 3 "" H 10250 4200 30  0000 C CNN
 	1    10250 4200
 	0    -1   -1   0   
@@ -427,7 +418,7 @@ U 1 1 559FAE0B
 P 4850 1100
 F 0 "JP1" H 4600 1325 50  0000 L BNN
 F 1 "PINHD-1X3_2.54" H 4600 800 50  0000 L BNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 4850 1250 50  0001 C CNN
+F 2 "antdroid-board:Pin_Header_Straight_1x03" H 4850 1250 50  0001 C CNN
 F 3 "" H 4850 1100 60  0000 C CNN
 	1    4850 1100
 	1    0    0    -1  
@@ -440,7 +431,7 @@ U 1 1 559FBA4D
 P 4850 2300
 F 0 "JP3" H 4600 2525 50  0000 L BNN
 F 1 "PINHD-1X3_2.54" H 4600 2000 50  0000 L BNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 4850 2450 50  0001 C CNN
+F 2 "antdroid-board:Pin_Header_Straight_1x03" H 4850 2450 50  0001 C CNN
 F 3 "" H 4850 2300 60  0000 C CNN
 	1    4850 2300
 	1    0    0    -1  
@@ -451,7 +442,7 @@ U 1 1 559FB110
 P 4850 1700
 F 0 "JP2" H 4600 1925 50  0000 L BNN
 F 1 "PINHD-1X3_2.54" H 4600 1400 50  0000 L BNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 4850 1850 50  0001 C CNN
+F 2 "antdroid-board:Pin_Header_Straight_1x03" H 4850 1850 50  0001 C CNN
 F 3 "" H 4850 1700 60  0000 C CNN
 	1    4850 1700
 	1    0    0    -1  
@@ -501,7 +492,7 @@ U 1 1 559FEA14
 P 4850 3300
 F 0 "JP4" H 4600 3525 50  0000 L BNN
 F 1 "PINHD-1X3_2.54" H 4600 3000 50  0000 L BNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 4850 3450 50  0001 C CNN
+F 2 "antdroid-board:Pin_Header_Straight_1x03" H 4850 3450 50  0001 C CNN
 F 3 "" H 4850 3300 60  0000 C CNN
 	1    4850 3300
 	1    0    0    -1  
@@ -514,7 +505,7 @@ U 1 1 559FEA1B
 P 4850 4500
 F 0 "JP6" H 4600 4725 50  0000 L BNN
 F 1 "PINHD-1X3_2.54" H 4600 4200 50  0000 L BNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 4850 4650 50  0001 C CNN
+F 2 "antdroid-board:Pin_Header_Straight_1x03" H 4850 4650 50  0001 C CNN
 F 3 "" H 4850 4500 60  0000 C CNN
 	1    4850 4500
 	1    0    0    -1  
@@ -525,7 +516,7 @@ U 1 1 559FEA21
 P 4850 3900
 F 0 "JP5" H 4600 4125 50  0000 L BNN
 F 1 "PINHD-1X3_2.54" H 4600 3600 50  0000 L BNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 4850 4050 50  0001 C CNN
+F 2 "antdroid-board:Pin_Header_Straight_1x03" H 4850 4050 50  0001 C CNN
 F 3 "" H 4850 3900 60  0000 C CNN
 	1    4850 3900
 	1    0    0    -1  
@@ -575,7 +566,7 @@ U 1 1 559FF27A
 P 4850 5500
 F 0 "JP7" H 4600 5725 50  0000 L BNN
 F 1 "PINHD-1X3_2.54" H 4600 5200 50  0000 L BNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 4850 5650 50  0001 C CNN
+F 2 "antdroid-board:Pin_Header_Straight_1x03" H 4850 5650 50  0001 C CNN
 F 3 "" H 4850 5500 60  0000 C CNN
 	1    4850 5500
 	1    0    0    -1  
@@ -588,7 +579,7 @@ U 1 1 559FF281
 P 4850 6700
 F 0 "JP9" H 4600 6925 50  0000 L BNN
 F 1 "PINHD-1X3_2.54" H 4600 6400 50  0000 L BNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 4850 6850 50  0001 C CNN
+F 2 "antdroid-board:Pin_Header_Straight_1x03" H 4850 6850 50  0001 C CNN
 F 3 "" H 4850 6700 60  0000 C CNN
 	1    4850 6700
 	1    0    0    -1  
@@ -599,7 +590,7 @@ U 1 1 559FF287
 P 4850 6100
 F 0 "JP8" H 4600 6325 50  0000 L BNN
 F 1 "PINHD-1X3_2.54" H 4600 5800 50  0000 L BNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 4850 6250 50  0001 C CNN
+F 2 "antdroid-board:Pin_Header_Straight_1x03" H 4850 6250 50  0001 C CNN
 F 3 "" H 4850 6100 60  0000 C CNN
 	1    4850 6100
 	1    0    0    -1  
@@ -649,7 +640,7 @@ U 1 1 55A00497
 P 6100 1100
 F 0 "JP10" H 5850 1325 50  0000 L BNN
 F 1 "PINHD-1X3_2.54" H 5850 800 50  0000 L BNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 6100 1250 50  0001 C CNN
+F 2 "antdroid-board:Pin_Header_Straight_1x03" H 6100 1250 50  0001 C CNN
 F 3 "" H 6100 1100 60  0000 C CNN
 	1    6100 1100
 	1    0    0    -1  
@@ -662,7 +653,7 @@ U 1 1 55A0049E
 P 6100 2300
 F 0 "JP12" H 5850 2525 50  0000 L BNN
 F 1 "PINHD-1X3_2.54" H 5850 2000 50  0000 L BNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 6100 2450 50  0001 C CNN
+F 2 "antdroid-board:Pin_Header_Straight_1x03" H 6100 2450 50  0001 C CNN
 F 3 "" H 6100 2300 60  0000 C CNN
 	1    6100 2300
 	1    0    0    -1  
@@ -673,7 +664,7 @@ U 1 1 55A004A4
 P 6100 1700
 F 0 "JP11" H 5850 1925 50  0000 L BNN
 F 1 "PINHD-1X3_2.54" H 5850 1400 50  0000 L BNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 6100 1850 50  0001 C CNN
+F 2 "antdroid-board:Pin_Header_Straight_1x03" H 6100 1850 50  0001 C CNN
 F 3 "" H 6100 1700 60  0000 C CNN
 	1    6100 1700
 	1    0    0    -1  
@@ -723,7 +714,7 @@ U 1 1 55A004DA
 P 6100 3300
 F 0 "JP13" H 5850 3525 50  0000 L BNN
 F 1 "PINHD-1X3_2.54" H 5850 3000 50  0000 L BNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 6100 3450 50  0001 C CNN
+F 2 "antdroid-board:Pin_Header_Straight_1x03" H 6100 3450 50  0001 C CNN
 F 3 "" H 6100 3300 60  0000 C CNN
 	1    6100 3300
 	1    0    0    -1  
@@ -736,7 +727,7 @@ U 1 1 55A004E1
 P 6100 4500
 F 0 "JP15" H 5850 4725 50  0000 L BNN
 F 1 "PINHD-1X3_2.54" H 5850 4200 50  0000 L BNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 6100 4650 50  0001 C CNN
+F 2 "antdroid-board:Pin_Header_Straight_1x03" H 6100 4650 50  0001 C CNN
 F 3 "" H 6100 4500 60  0000 C CNN
 	1    6100 4500
 	1    0    0    -1  
@@ -747,7 +738,7 @@ U 1 1 55A004E7
 P 6100 3900
 F 0 "JP14" H 5850 4125 50  0000 L BNN
 F 1 "PINHD-1X3_2.54" H 5850 3600 50  0000 L BNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 6100 4050 50  0001 C CNN
+F 2 "antdroid-board:Pin_Header_Straight_1x03" H 6100 4050 50  0001 C CNN
 F 3 "" H 6100 3900 60  0000 C CNN
 	1    6100 3900
 	1    0    0    -1  
@@ -797,7 +788,7 @@ U 1 1 55A0051D
 P 6100 5500
 F 0 "JP16" H 5850 5725 50  0000 L BNN
 F 1 "PINHD-1X3_2.54" H 5850 5200 50  0000 L BNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 6100 5650 50  0001 C CNN
+F 2 "antdroid-board:Pin_Header_Straight_1x03" H 6100 5650 50  0001 C CNN
 F 3 "" H 6100 5500 60  0000 C CNN
 	1    6100 5500
 	1    0    0    -1  
@@ -810,7 +801,7 @@ U 1 1 55A00524
 P 6100 6700
 F 0 "JP18" H 5850 6925 50  0000 L BNN
 F 1 "PINHD-1X3_2.54" H 5850 6400 50  0000 L BNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 6100 6850 50  0001 C CNN
+F 2 "antdroid-board:Pin_Header_Straight_1x03" H 6100 6850 50  0001 C CNN
 F 3 "" H 6100 6700 60  0000 C CNN
 	1    6100 6700
 	1    0    0    -1  
@@ -821,7 +812,7 @@ U 1 1 55A0052A
 P 6100 6100
 F 0 "JP17" H 5850 6325 50  0000 L BNN
 F 1 "PINHD-1X3_2.54" H 5850 5800 50  0000 L BNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x03" H 6100 6250 50  0001 C CNN
+F 2 "antdroid-board:Pin_Header_Straight_1x03" H 6100 6250 50  0001 C CNN
 F 3 "" H 6100 6100 60  0000 C CNN
 	1    6100 6100
 	1    0    0    -1  
@@ -970,7 +961,7 @@ U 1 1 559E0A2B
 P 7200 1700
 F 0 "C1" H 7050 1850 50  0000 L CNN
 F 1 "2x470µF/25V" H 6650 1600 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:C_Radial_D10_L13_P5" H 7238 1550 30  0001 C CNN
+F 2 "antdroid-board:C_Radial_D10_L13_P5" H 7238 1550 30  0001 C CNN
 F 3 "http://www.futurlec.com/Capacitors/C470U25E.shtml" H 7200 1700 60  0001 C CNN
 	1    7200 1700
 	1    0    0    -1  
@@ -1003,7 +994,7 @@ U 1 1 559E209D
 P 8550 2550
 F 0 "U2" H 8150 3000 50  0000 L CNN
 F 1 "LM2678T-5.0" H 8150 2900 50  0000 L CNN
-F 2 "Power_Integrations:TO-220-7C" H 8850 2200 50  0001 C CIN
+F 2 "antdroid-board:TO-220-7C" H 8850 2200 50  0001 C CIN
 F 3 "www.ti.com/lit/ds/symlink/lm2678.pdf" H 8550 2550 50  0001 C CNN
 F 4 "http://futurlec.com" H 8550 2550 60  0001 C CNN "Supplier and ref"
 	1    8550 2550
@@ -1015,7 +1006,7 @@ U 1 1 559E20A3
 P 7450 3050
 F 0 "C4" H 7350 3200 50  0000 L CNN
 F 1 "470µF/25V" H 6900 2950 50  0001 L CNN
-F 2 "Capacitors_ThroughHole:C_Radial_D10_L13_P5" H 7488 2900 30  0001 C CNN
+F 2 "antdroid-board:C_Radial_D10_L13_P5" H 7488 2900 30  0001 C CNN
 F 3 "http://www.futurlec.com/Capacitors/C470U25E.shtml" H 7450 3050 60  0001 C CNN
 	1    7450 3050
 	1    0    0    -1  
@@ -1026,7 +1017,7 @@ U 1 1 559E20A9
 P 7850 3050
 F 0 "C6" H 7875 3150 50  0000 L CNN
 F 1 "0.47µF" H 7875 2950 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:C_Disc_D6_P5" H 7888 2900 30  0001 C CNN
+F 2 "antdroid-board:C_Disc_D6_P5" H 7888 2900 30  0001 C CNN
 F 3 "http://www.futurlec.com/Capacitors/C470PC.shtml" H 7850 3050 60  0001 C CNN
 	1    7850 3050
 	1    0    0    -1  
@@ -1037,7 +1028,7 @@ U 1 1 559E20AF
 P 9300 2550
 F 0 "C9" V 9450 2550 50  0000 L CNN
 F 1 "0,01µF" V 9150 2450 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0603_HandSoldering" H 9338 2400 30  0001 C CNN
+F 2 "antdroid-board:C_0603_HandSoldering" H 9338 2400 30  0001 C CNN
 F 3 "http://www.futurlec.com/Capacitors/C010PC.shtml" H 9300 2550 60  0001 C CNN
 	1    9300 2550
 	0    -1   -1   0   
@@ -1092,7 +1083,7 @@ U 1 1 559E20CD
 P 10100 2750
 F 0 "L2" V 10050 2750 50  0000 C CNN
 F 1 "15µH/5.8A" V 10200 2750 50  0000 C CNN
-F 2 "Inductors:SELF-WE-PD-XXL" H 10100 2750 60  0001 C CNN
+F 2 "antdroid-board:SELF-WE-PD-XXL" H 10100 2750 60  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/54/SRR1210-60886.pdf" H 10100 2750 60  0001 C CNN
 	1    10100 2750
 	0    1    1    0   
@@ -1103,7 +1094,7 @@ U 1 1 559E20D3
 P 10550 3050
 F 0 "C12" H 10575 3150 50  0000 L CNN
 F 1 "1000µF/50V" H 10575 2950 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:C_Radial_D12.5_L25_P5" H 10588 2900 30  0001 C CNN
+F 2 "antdroid-board:C_Radial_D12.5_L25_P5" H 10588 2900 30  0001 C CNN
 F 3 "http://www.futurlec.com/Capacitors/C1000U50E.shtml" H 10550 3050 60  0001 C CNN
 	1    10550 3050
 	1    0    0    -1  
@@ -1125,7 +1116,7 @@ U 1 1 559E20DF
 P 9700 3050
 F 0 "D2" V 9750 2850 50  0000 L BNN
 F 1 "MBR745G" V 9650 2600 50  0000 L BNN
-F 2 "Diodes_ThroughHole:Diode_TO-220_Vertical" H 9700 3200 50  0001 C CNN
+F 2 "antdroid-board:Diode_TO-220_Vertical" H 9700 3200 50  0001 C CNN
 F 3 "http://www.futurlec.com/info.gif" H 9700 3050 60  0001 C CNN
 	1    9700 3050
 	0    -1   -1   0   
@@ -1136,7 +1127,7 @@ U 1 1 559E2103
 P 7200 3050
 F 0 "C2" H 7050 3200 50  0000 L CNN
 F 1 "2x470µF/25V" H 6650 2950 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:C_Radial_D10_L13_P5" H 7238 2900 30  0001 C CNN
+F 2 "antdroid-board:C_Radial_D10_L13_P5" H 7238 2900 30  0001 C CNN
 F 3 "http://www.futurlec.com/Capacitors/C470U25E.shtml" H 7200 3050 60  0001 C CNN
 	1    7200 3050
 	1    0    0    -1  
@@ -1158,7 +1149,7 @@ U 1 1 559E5B74
 P 8400 5950
 F 0 "C7" H 8425 6050 50  0000 L CNN
 F 1 "100µF/25V" H 8425 5850 50  0000 L CNN
-F 2 "Capacitors_SMD:c_elec_6.3x7.7" H 8438 5800 30  0001 C CNN
+F 2 "antdroid-board:c_elec_6.3x7.7" H 8438 5800 30  0001 C CNN
 F 3 "http://www.futurlec.com/info.gif" H 8400 5950 60  0001 C CNN
 	1    8400 5950
 	1    0    0    -1  
@@ -1169,7 +1160,7 @@ U 1 1 559E6708
 P 10750 5950
 F 0 "C13" H 10775 6050 50  0000 L CNN
 F 1 "100µF/16V" H 10775 5850 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:C_Radial_D5_L11_P2" H 10788 5800 30  0001 C CNN
+F 2 "antdroid-board:C_Radial_D5_L11_P2" H 10788 5800 30  0001 C CNN
 F 3 "http://www.futurlec.com/Capacitors/C100U16ESMD.shtml" H 10750 5950 60  0001 C CNN
 	1    10750 5950
 	1    0    0    -1  
@@ -1192,7 +1183,7 @@ U 1 1 55A01775
 P 9350 4350
 F 0 "JP19" H 9100 4675 50  0000 L BNN
 F 1 "PINHD-1X5" H 9100 3950 50  0000 L BNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x05" H 9350 4500 50  0001 C CNN
+F 2 "antdroid-board:Pin_Header_Straight_1x05" H 9350 4500 50  0001 C CNN
 F 3 "" H 9350 4350 60  0000 C CNN
 	1    9350 4350
 	1    0    0    -1  
@@ -1540,7 +1531,7 @@ U 1 1 559DDEEC
 P 3300 4500
 F 0 "R2" H 3400 4550 50  0000 C CNN
 F 1 "10K" H 3450 4450 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 3230 4500 30  0001 C CNN
+F 2 "antdroid-board:R_0603_HandSoldering" V 3230 4500 30  0001 C CNN
 F 3 "" H 3300 4500 30  0000 C CNN
 	1    3300 4500
 	1    0    0    -1  
@@ -1551,7 +1542,7 @@ U 1 1 559DDFF3
 P 3300 4200
 F 0 "R1" H 3400 4250 50  0000 C CNN
 F 1 "30.1K" H 3450 4150 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 3230 4200 30  0001 C CNN
+F 2 "antdroid-board:R_0603_HandSoldering" V 3230 4200 30  0001 C CNN
 F 3 "" H 3300 4200 30  0000 C CNN
 	1    3300 4200
 	1    0    0    -1  
@@ -1886,7 +1877,7 @@ U 1 1 559FEA1C
 P 10250 4500
 F 0 "R8" V 10330 4500 50  0000 C CNN
 F 1 "R" V 10150 4500 50  0000 C CNN
-F 2 "Resistors_SMD:R_0603_HandSoldering" V 10180 4500 30  0001 C CNN
+F 2 "antdroid-board:R_0603_HandSoldering" V 10180 4500 30  0001 C CNN
 F 3 "" H 10250 4500 30  0000 C CNN
 	1    10250 4500
 	0    -1   -1   0   
@@ -2001,7 +1992,7 @@ U 1 1 55A11992
 P 1900 6850
 F 0 "P2" H 2050 6850 50  0000 C CNN
 F 1 "CONN_01X01" H 2100 6750 50  0000 C CNN
-F 2 "Connect:1pin" H 1900 6850 60  0001 C CNN
+F 2 "antdroid-board:1pin" H 1900 6850 60  0001 C CNN
 F 3 "" H 1900 6850 60  0000 C CNN
 	1    1900 6850
 	1    0    0    -1  
@@ -2012,7 +2003,7 @@ U 1 1 55A11AAA
 P 1600 6950
 F 0 "P1" H 1750 6950 50  0000 C CNN
 F 1 "CONN_01X01" H 1750 6850 50  0000 C CNN
-F 2 "Connect:1pin" H 1600 6950 60  0001 C CNN
+F 2 "antdroid-board:1pin" H 1600 6950 60  0001 C CNN
 F 3 "" H 1600 6950 60  0000 C CNN
 	1    1600 6950
 	1    0    0    -1  
@@ -2109,7 +2100,7 @@ U 1 1 55A377CB
 P 650 3450
 F 0 "JP20" H 400 3775 50  0000 L BNN
 F 1 "PINHD-1X4_2.54" H 200 3850 50  0000 L BNN
-F 2 "Pin_Headers:Pin_Header_Straight_1x04" H 650 3600 50  0001 C CNN
+F 2 "antdroid-board:Pin_Header_Straight_1x04" H 650 3600 50  0001 C CNN
 F 3 "" H 650 3450 60  0000 C CNN
 	1    650  3450
 	-1   0    0    1   
