@@ -1,4 +1,4 @@
-update=Mon 13 Jul 2015 21:59:19 CEST
+update=Mon 13 Jul 2015 22:33:39 CEST
 version=1
 last_client=kicad
 [cvpcb]
@@ -30,4 +30,5 @@ version=1
 LibDir=/home/alex/antdroid/antdroid-board/libs
 [eeschema/libraries]
 LibName1=antdroid-board
-LibName2=power
+LibName2=dc-dc
+LibName3=power

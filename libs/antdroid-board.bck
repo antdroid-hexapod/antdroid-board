@@ -8,6 +8,14 @@ $CMP +5VA
 K POWER, PWR
 $ENDCMP
 #
+$CMP +5VD
+K POWER, PWR
+$ENDCMP
+#
+$CMP +5VP
+K POWER, PWR
+$ENDCMP
+#
 $CMP C
 D Unpolarized capacitor
 $ENDCMP
@@ -22,6 +30,30 @@ $ENDCMP
 #
 $CMP LED
 K LED
+$ENDCMP
+#
+$CMP LM2675M-12
+D LM2675M, 12V, 1A Step-Down VR
+K SIMPLE SWITCHER® Step-Down Voltage Regulator 12V 1A
+F www.national.com/ds/LM/LM2675.pdf
+$ENDCMP
+#
+$CMP LM2675M-3.3
+D LM2675M, 3.3V, 1A Step-Down VR
+K SIMPLE SWITCHER® Step-Down Voltage Regulator 3.3V 1A
+F www.national.com/ds/LM/LM2675.pdf
+$ENDCMP
+#
+$CMP LM2675M-5
+D LM2675M, 5V, 1A Step-Down VR
+K SIMPLE SWITCHER® Step-Down Voltage Regulator 5V 1A
+F www.national.com/ds/LM/LM2675.pdf
+$ENDCMP
+#
+$CMP LM2675M-ADJ
+D LM2675M, Adjustable Output, 1A Step-Down VR
+K SIMPLE SWITCHER® Step-Down Voltage Regulator Adjustable
+F www.national.com/ds/LM/LM2675.pdf
 $ENDCMP
 #
 $CMP LM2678T
