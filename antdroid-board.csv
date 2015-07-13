@@ -8,7 +8,7 @@ C10 C8 C9 ,3,10nF,antdroid-board:C_0603_HandSoldering,
 D1 D2 ,2,MBR745G,antdroid-board:Diode_TO-220_Vertical,http://www.futurlec.com/Diodes/MBR745G.shtml,Futurlec,MBR745G
 D3 ,1,MBRS340,antdroid-board:Diode-DO-214AB_Handsoldering,http://www.mouser.com/ds/2/149/MBRS340-63506.pdf,Mouser,512-MBRS340
 D4 D5 ,2,LED,antdroid-board:LED-0603,http://www.mouser.com/ds/2/311/LB%20Q39G%20-%20CHIPLED%200603-553388.pdf,Mouser,720-LBQ39GL2N2351
-JP1 JP10 JP11 JP12 JP13 JP14 JP15 JP16 JP17 JP18 JP2 JP3 JP4 JP5 JP6 JP7 JP8 JP9 ,18,PINHD-1X3_2.54,antdroid-board:Pin_Header_Straight_1x03,http://futurlec.com/Connectors/HEADS40.shtml,Futurlec,HEADS40
+JP1 JP10 JP11 JP12 JP13 JP14 JP15 JP16 JP17 JP18 JP2 JP21 JP3 JP4 JP5 JP6 JP7 JP8 JP9 ,19,PINHD-1X3_2.54,antdroid-board:Pin_Header_Straight_1x03,http://futurlec.com/Connectors/HEADS40.shtml,Futurlec,HEADS40
 JP19 ,1,PINHD-1X5,antdroid-board:Pin_Header_Straight_1x05,http://futurlec.com/Connectors/HEADS40.shtml,Futurlec,HEADS40
 JP20 ,1,PINHD-1X4_2.54,antdroid-board:Pin_Header_Straight_1x04,http://futurlec.com/Connectors/HEADS40.shtml,Futurlec,HEADS40
 L1 L2 ,2,15µH/5.8A,antdroid-board:SELF-WE-PD-XXL,http://www.mouser.com/ds/2/54/SRR1210-60886.pdf,Mouser,652-SRR1210-150M

@@ -1,4 +1,4 @@
-update=Mon 13 Jul 2015 22:33:39 CEST
+update=Mon 13 Jul 2015 23:26:39 CEST
 version=1
 last_client=kicad
 [cvpcb]
@@ -12,8 +12,8 @@ PageLayoutDescrFile=
 LastNetListRead=
 PadDrill=1.016
 PadDrillOvalY=1.016
-PadSizeH=2.032
-PadSizeV=1.7272
+PadSizeH=1.905
+PadSizeV=2.286
 PcbTextSizeV=1.5
 PcbTextSizeH=1.5
 PcbTextThickness=0.3
@@ -30,5 +30,3 @@ version=1
 LibDir=/home/alex/antdroid/antdroid-board/libs
 [eeschema/libraries]
 LibName1=antdroid-board
-LibName2=dc-dc
-LibName3=power

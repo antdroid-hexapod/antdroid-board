@@ -1,7 +1,5 @@
 EESchema Schematic File Version 2
 LIBS:antdroid-board
-LIBS:dc-dc
-LIBS:power
 LIBS:antdroid-board-cache
 EELAYER 25 0
 EELAYER END
@@ -954,7 +952,6 @@ NoConn ~ 1100 3750
 NoConn ~ 1100 3650
 NoConn ~ 1100 2000
 NoConn ~ 1100 1900
-NoConn ~ 1100 1700
 NoConn ~ 8700 5600
 $Comp
 L GND #PWR033
@@ -2156,4 +2153,51 @@ NoConn ~ 1100 1400
 NoConn ~ 1100 1500
 NoConn ~ 1100 1600
 NoConn ~ 1100 1800
+$Comp
+L PINHD-1X3_2.54 JP21
+U 1 1 55A489D2
+P 5300 7450
+F 0 "JP21" H 5050 7675 50  0000 L BNN
+F 1 "PINHD-1X3_2.54" H 5050 7150 50  0000 L BNN
+F 2 "antdroid-board:Pin_Header_Straight_1x03" H 5300 7600 50  0001 C CNN
+F 3 "" H 5300 7450 60  0000 C CNN
+	1    5300 7450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GND #PWR088
+U 1 1 55A489D8
+P 4800 7350
+F 0 "#PWR088" H 4800 7100 50  0001 C CNN
+F 1 "GND" V 4750 7400 50  0000 C CNN
+F 2 "" H 4800 7350 60  0000 C CNN
+F 3 "" H 4800 7350 60  0000 C CNN
+	1    4800 7350
+	0    1    1    0   
+$EndComp
+Text Label 4450 7550 0    60   ~ 0
+AUX
+Wire Wire Line
+	5200 7350 4800 7350
+Wire Wire Line
+	5200 7550 4450 7550
+Wire Wire Line
+	5200 7450 4800 7450
+$Comp
+L +5VA #PWR089
+U 1 1 55A489E2
+P 4800 7450
+F 0 "#PWR089" H 4800 7300 50  0001 C CNN
+F 1 "+5VA" V 4850 7500 50  0000 C CNN
+F 2 "" H 4800 7450 60  0000 C CNN
+F 3 "" H 4800 7450 60  0000 C CNN
+	1    4800 7450
+	0    -1   -1   0   
+$EndComp
+Text Notes 4000 7150 0    60   ~ 12
+Aux servo
+Text Label 800  1700 0    60   ~ 0
+AUX
+Wire Wire Line
+	800  1700 1100 1700
 $EndSCHEMATC
