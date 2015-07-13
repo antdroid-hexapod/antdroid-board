@@ -6,6 +6,7 @@ C5 C6 ,2,0.47µF,antdroid-board:C_Disc_D6_P5,http://www.futurlec.com/Capacitors/
 C7 ,1,100µF/25V,antdroid-board:c_elec_6.3x7.7,http://www.futurlec.com/Capacitors/C100U25E.shtml,Futurlec,C100U25E
 C10 C8 C9 ,3,10nF,antdroid-board:C_0603_HandSoldering,
 D1 D2 ,2,MBR745G,antdroid-board:Diode_TO-220_Vertical,http://www.futurlec.com/Diodes/MBR745G.shtml,Futurlec,MBR745G
+D3 ,1,MBRS340,antdroid-board:Diode-DO-214AB_Handsoldering,http://www.mouser.com/ds/2/149/MBRS340-63506.pdf,Mouser,512-MBRS340
 D4 D5 ,2,LED,LEDs:LED-0603,http://www.mouser.com/ds/2/311/LB%20Q39G%20-%20CHIPLED%200603-553388.pdf,Mouser,720-LBQ39GL2N2351
 JP1 JP10 JP11 JP12 JP13 JP14 JP15 JP16 JP17 JP18 JP2 JP3 JP4 JP5 JP6 JP7 JP8 JP9 ,18,PINHD-1X3_2.54,antdroid-board:Pin_Header_Straight_1x03,http://futurlec.com/Connectors/HEADS40.shtml,Futurlec,HEADS40
 JP19 ,1,PINHD-1X5,antdroid-board:Pin_Header_Straight_1x05,http://futurlec.com/Connectors/HEADS40.shtml,Futurlec,HEADS40
@@ -16,6 +17,7 @@ P1 P2 ,2,CONN_01X01,antdroid-board:1pin,
 Q1 Q2 ,2,BSS138,antdroid-board:SOT-23,http://www.futurlec.com/Transistors/BSS138.shtml,Futurlec,BSS138
 R1 ,1,30.1K,antdroid-board:R_0603_HandSoldering,
 R2 R3 R4 R5 R6 ,5,10K,antdroid-board:R_0603_HandSoldering,
-R7 R8 ,2,150Ω,antdroid-board:R_0603_HandSoldering,
+R7 R8 ,2,150Ω,antdroid-board:R_0603_HandSoldering,http://www.mouser.com/ds/2/427/mcat_pro-223602.pdf,Mouser,594-MCT0603MD1500DP5
 SHIELD1 ,1,ARDUINO_MEGA_SHIELD,antdroid-board:ArduinoMegaShield,
 U1 U2 ,2,LM2678T-5.0,antdroid-board:TO-220-7C,www.ti.com/lit/ds/symlink/lm2678.pdf,Futurlec,LM2678T-5
+U3 ,1,LM2675M-5,antdroid-board:AB2_SO08,http://www.futurlec.com/Linear/LM2675.shtml,Futurlec,LM2675
