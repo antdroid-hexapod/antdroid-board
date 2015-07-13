@@ -1,3 +1,4 @@
 /_autosave-antdroid-board.kicad_pcb
 *.bak
 *.kicad_pcb-bak
+*-cache.*
