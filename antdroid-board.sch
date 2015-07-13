@@ -1,6 +1,5 @@
 EESchema Schematic File Version 2
 LIBS:antdroid-board
-LIBS:led
 LIBS:antdroid-board-cache
 EELAYER 25 0
 EELAYER END
@@ -34,7 +33,9 @@ P 7250 4700
 F 0 "Q1" V 7700 4700 50  0000 L CNN
 F 1 "BSS138" V 7600 4550 50  0000 L CNN
 F 2 "antdroid-board:SOT-23" V 7500 4550 50  0001 L CIN
-F 3 "" H 7250 4700 50  0000 L CNN
+F 3 "http://www.futurlec.com/Transistors/BSS138.shtml" H 7250 4700 50  0001 L CNN
+F 4 "Futurlec" V 7250 4700 60  0001 C CNN "Supplier"
+F 5 "BSS138" V 7250 4700 60  0001 C CNN "Supplier ref"
 	1    7250 4700
 	0    -1   1    0   
 $EndComp
@@ -104,7 +105,8 @@ F 0 "U1" H 8150 1650 50  0000 L CNN
 F 1 "LM2678T-5.0" H 8150 1550 50  0000 L CNN
 F 2 "antdroid-board:TO-220-7C" H 8850 850 50  0001 C CIN
 F 3 "www.ti.com/lit/ds/symlink/lm2678.pdf" H 8550 1200 50  0001 C CNN
-F 4 "LM2678T-5" H 8550 1200 60  0001 C CNN "Supplier and ref"
+F 4 "Futurlec" H 8550 1200 60  0001 C CNN "Supplier"
+F 5 "LM2678T-5" H 8550 1200 60  0001 C CNN "Supplier ref"
 	1    8550 1200
 	1    0    0    -1  
 $EndComp
@@ -113,9 +115,11 @@ L CP C3
 U 1 1 559C04D2
 P 7450 1700
 F 0 "C3" H 7350 1850 50  0000 L CNN
-F 1 "470µF/25V" H 6900 1600 50  0001 L CNN
+F 1 "470µF/25V" V 7600 1550 50  0000 L CNN
 F 2 "antdroid-board:C_Radial_D10_L13_P5" H 7488 1550 30  0001 C CNN
 F 3 "http://www.futurlec.com/Capacitors/C470U25E.shtml" H 7450 1700 60  0001 C CNN
+F 4 "Futurlec" H 7450 1700 60  0001 C CNN "Supplier"
+F 5 "C470U25E" H 7450 1700 60  0001 C CNN "Supplier ref"
 	1    7450 1700
 	1    0    0    -1  
 $EndComp
@@ -127,6 +131,8 @@ F 0 "C5" H 7875 1800 50  0000 L CNN
 F 1 "0.47µF" H 7875 1600 50  0000 L CNN
 F 2 "antdroid-board:C_Disc_D6_P5" H 7888 1550 30  0001 C CNN
 F 3 "http://www.futurlec.com/Capacitors/C470PC.shtml" H 7850 1700 60  0001 C CNN
+F 4 "Futurlec" H 7850 1700 60  0001 C CNN "Supplier"
+F 5 "C470PC" H 7850 1700 60  0001 C CNN "Supplier ref"
 	1    7850 1700
 	1    0    0    -1  
 $EndComp
@@ -135,9 +141,9 @@ L C C8
 U 1 1 559C0EA6
 P 9300 1200
 F 0 "C8" V 9450 1200 50  0000 L CNN
-F 1 "0,01µF" V 9150 1100 50  0000 L CNN
+F 1 "10nF" V 9150 1100 50  0000 L CNN
 F 2 "antdroid-board:C_0603_HandSoldering" H 9338 1050 30  0001 C CNN
-F 3 "http://www.futurlec.com/Capacitors/C010PC.shtml" H 9300 1200 60  0001 C CNN
+F 3 "" H 9300 1200 60  0001 C CNN
 	1    9300 1200
 	0    -1   -1   0   
 $EndComp
@@ -193,6 +199,8 @@ F 0 "L1" V 10050 1400 50  0000 C CNN
 F 1 "15µH/5.8A" V 10200 1400 50  0000 C CNN
 F 2 "antdroid-board:SELF-WE-PD-XXL" H 10100 1400 60  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/54/SRR1210-60886.pdf" H 10100 1400 60  0001 C CNN
+F 4 "Mouser" V 10100 1400 60  0001 C CNN "Supplier"
+F 5 "652-SRR1210-150M" V 10100 1400 60  0001 C CNN "Supplier ref"
 	1    10100 1400
 	0    1    1    0   
 $EndComp
@@ -204,6 +212,8 @@ F 0 "C11" H 10575 1800 50  0000 L CNN
 F 1 "1000µF/50V" H 10575 1600 50  0000 L CNN
 F 2 "antdroid-board:C_Radial_D12.5_L25_P5" H 10588 1550 30  0001 C CNN
 F 3 "http://www.futurlec.com/Capacitors/C1000U50E.shtml" H 10550 1700 60  0001 C CNN
+F 4 "Futurlec" H 10550 1700 60  0001 C CNN "Supplier"
+F 5 "C1000U50E" H 10550 1700 60  0001 C CNN "Supplier ref"
 	1    10550 1700
 	1    0    0    -1  
 $EndComp
@@ -225,7 +235,9 @@ P 9700 1700
 F 0 "D1" V 9750 1500 50  0000 L BNN
 F 1 "MBR745G" V 9650 1250 50  0000 L BNN
 F 2 "antdroid-board:Diode_TO-220_Vertical" H 9700 1850 50  0001 C CNN
-F 3 "http://www.futurlec.com/info.gif" H 9700 1700 60  0001 C CNN
+F 3 "http://www.futurlec.com/Diodes/MBR745G.shtml" H 9700 1700 60  0001 C CNN
+F 4 "Futurlec" V 9700 1700 60  0001 C CNN "Supplier"
+F 5 "MBR745G" V 9700 1700 60  0001 C CNN "Supplier ref"
 	1    9700 1700
 	0    -1   -1   0   
 $EndComp
@@ -237,6 +249,8 @@ F 0 "U3" H 8800 6050 50  0000 L CNN
 F 1 "LM2675M-5" H 8800 5950 50  0000 L CNN
 F 2 "antdroid-board:AB2_SO08" H 9500 5250 50  0001 C CIN
 F 3 "http://www.futurlec.com/Linear/LM2675.shtml" H 9200 5600 50  0001 C CNN
+F 4 "Futurlec" H 9200 5600 60  0001 C CNN "Supplier"
+F 5 "LM2675" H 9200 5600 60  0001 C CNN "Supplier ref"
 	1    9200 5600
 	1    0    0    -1  
 $EndComp
@@ -258,7 +272,9 @@ P 10000 5950
 F 0 "D3" V 10000 5750 50  0000 L BNN
 F 1 "MBRS340" V 9900 5600 50  0000 L BNN
 F 2 "antdroid-board:Diode-DO-214AB_Handsoldering" H 10000 6100 50  0001 C CNN
-F 3 "https://www.fairchildsemi.com/datasheets/MB/MBRS340.pdf" H 10000 5950 60  0001 C CNN
+F 3 "http://www.mouser.com/ds/2/149/MBRS340-63506.pdf" H 10000 5950 60  0001 C CNN
+F 4 "Mouser" V 10000 5950 60  0001 C CNN "Supplier"
+F 5 "512-MBRS340" V 10000 5950 60  0001 C CNN "Supplier ref"
 	1    10000 5950
 	0    -1   -1   0   
 $EndComp
@@ -270,7 +286,8 @@ F 0 "L3" V 10400 5800 50  0000 C CNN
 F 1 "47µH/2A" V 10550 5800 50  0000 C CNN
 F 2 "antdroid-board:SELF-WE-PD-XXL" H 10450 5800 60  0001 C CNN
 F 3 "http://www.mouser.com/ds/2/390/CDRH124-465666.pdf" H 10450 5800 60  0001 C CNN
-F 4 "CDRH124NP-470MC" V 10450 5800 60  0001 C CNN "Ref"
+F 4 "Mouser" V 10450 5800 60  0001 C CNN "Supplier"
+F 5 "CDRH124NP-470MC" V 10450 5800 60  0001 C CNN "Supplier ref"
 	1    10450 5800
 	0    1    1    0   
 $EndComp
@@ -419,7 +436,9 @@ P 4850 1100
 F 0 "JP1" H 4600 1325 50  0000 L BNN
 F 1 "PINHD-1X3_2.54" H 4600 800 50  0000 L BNN
 F 2 "antdroid-board:Pin_Header_Straight_1x03" H 4850 1250 50  0001 C CNN
-F 3 "" H 4850 1100 60  0000 C CNN
+F 3 "http://futurlec.com/Connectors/HEADS40.shtml" H 4850 1100 60  0001 C CNN
+F 4 "Futurlec" H 4850 1100 60  0001 C CNN "Supplier"
+F 5 "HEADS40" H 4850 1100 60  0001 C CNN "Supplier ref"
 	1    4850 1100
 	1    0    0    -1  
 $EndComp
@@ -960,9 +979,11 @@ L CP C1
 U 1 1 559E0A2B
 P 7200 1700
 F 0 "C1" H 7050 1850 50  0000 L CNN
-F 1 "2x470µF/25V" H 6650 1600 50  0000 L CNN
+F 1 "470µF/25V" H 6650 1600 50  0000 L CNN
 F 2 "antdroid-board:C_Radial_D10_L13_P5" H 7238 1550 30  0001 C CNN
 F 3 "http://www.futurlec.com/Capacitors/C470U25E.shtml" H 7200 1700 60  0001 C CNN
+F 4 "Futurlec" H 7200 1700 60  0001 C CNN "Supplier"
+F 5 "C470U25E" H 7200 1700 60  0001 C CNN "Supplier ref"
 	1    7200 1700
 	1    0    0    -1  
 $EndComp
@@ -996,7 +1017,6 @@ F 0 "U2" H 8150 3000 50  0000 L CNN
 F 1 "LM2678T-5.0" H 8150 2900 50  0000 L CNN
 F 2 "antdroid-board:TO-220-7C" H 8850 2200 50  0001 C CIN
 F 3 "www.ti.com/lit/ds/symlink/lm2678.pdf" H 8550 2550 50  0001 C CNN
-F 4 "http://futurlec.com" H 8550 2550 60  0001 C CNN "Supplier and ref"
 	1    8550 2550
 	1    0    0    -1  
 $EndComp
@@ -1005,7 +1025,7 @@ L CP C4
 U 1 1 559E20A3
 P 7450 3050
 F 0 "C4" H 7350 3200 50  0000 L CNN
-F 1 "470µF/25V" H 6900 2950 50  0001 L CNN
+F 1 "470µF/25V" V 7600 2900 50  0000 L CNN
 F 2 "antdroid-board:C_Radial_D10_L13_P5" H 7488 2900 30  0001 C CNN
 F 3 "http://www.futurlec.com/Capacitors/C470U25E.shtml" H 7450 3050 60  0001 C CNN
 	1    7450 3050
@@ -1027,9 +1047,9 @@ L C C9
 U 1 1 559E20AF
 P 9300 2550
 F 0 "C9" V 9450 2550 50  0000 L CNN
-F 1 "0,01µF" V 9150 2450 50  0000 L CNN
+F 1 "10nF" V 9150 2450 50  0000 L CNN
 F 2 "antdroid-board:C_0603_HandSoldering" H 9338 2400 30  0001 C CNN
-F 3 "http://www.futurlec.com/Capacitors/C010PC.shtml" H 9300 2550 60  0001 C CNN
+F 3 "" H 9300 2550 60  0001 C CNN
 	1    9300 2550
 	0    -1   -1   0   
 $EndComp
@@ -1126,9 +1146,11 @@ L CP C2
 U 1 1 559E2103
 P 7200 3050
 F 0 "C2" H 7050 3200 50  0000 L CNN
-F 1 "2x470µF/25V" H 6650 2950 50  0000 L CNN
+F 1 "470µF/25V" H 6650 2950 50  0000 L CNN
 F 2 "antdroid-board:C_Radial_D10_L13_P5" H 7238 2900 30  0001 C CNN
 F 3 "http://www.futurlec.com/Capacitors/C470U25E.shtml" H 7200 3050 60  0001 C CNN
+F 4 "Futurlec" H 7200 3050 60  0001 C CNN "Supplier"
+F 5 "C470U25E" H 7200 3050 60  0001 C CNN "Supplier ref"
 	1    7200 3050
 	1    0    0    -1  
 $EndComp
@@ -1150,7 +1172,9 @@ P 8400 5950
 F 0 "C7" H 8425 6050 50  0000 L CNN
 F 1 "100µF/25V" H 8425 5850 50  0000 L CNN
 F 2 "antdroid-board:c_elec_6.3x7.7" H 8438 5800 30  0001 C CNN
-F 3 "http://www.futurlec.com/info.gif" H 8400 5950 60  0001 C CNN
+F 3 "http://www.futurlec.com/Capacitors/C100U25E.shtml" H 8400 5950 60  0001 C CNN
+F 4 "Futurlec" H 8400 5950 60  0001 C CNN "Supplier"
+F 5 "C100U25E" H 8400 5950 60  0001 C CNN "Supplier ref"
 	1    8400 5950
 	1    0    0    -1  
 $EndComp
@@ -1162,6 +1186,8 @@ F 0 "C13" H 10775 6050 50  0000 L CNN
 F 1 "100µF/16V" H 10775 5850 50  0000 L CNN
 F 2 "antdroid-board:C_Radial_D5_L11_P2" H 10788 5800 30  0001 C CNN
 F 3 "http://www.futurlec.com/Capacitors/C100U16ESMD.shtml" H 10750 5950 60  0001 C CNN
+F 4 "Futurlec" H 10750 5950 60  0001 C CNN "Supplier"
+F 5 "C100U16ESMD" H 10750 5950 60  0001 C CNN "Supplier ref"
 	1    10750 5950
 	1    0    0    -1  
 $EndComp
@@ -1184,7 +1210,9 @@ P 9350 4350
 F 0 "JP19" H 9100 4675 50  0000 L BNN
 F 1 "PINHD-1X5" H 9100 3950 50  0000 L BNN
 F 2 "antdroid-board:Pin_Header_Straight_1x05" H 9350 4500 50  0001 C CNN
-F 3 "" H 9350 4350 60  0000 C CNN
+F 3 "http://futurlec.com/Connectors/HEADS40.shtml" H 9350 4350 60  0001 C CNN
+F 4 "Futurlec" H 9350 4350 60  0001 C CNN "Supplier"
+F 5 "HEADS40" H 9350 4350 60  0001 C CNN "Supplier ref"
 	1    9350 4350
 	1    0    0    -1  
 $EndComp
@@ -2101,7 +2129,9 @@ P 650 3450
 F 0 "JP20" H 400 3775 50  0000 L BNN
 F 1 "PINHD-1X4_2.54" H 200 3850 50  0000 L BNN
 F 2 "antdroid-board:Pin_Header_Straight_1x04" H 650 3600 50  0001 C CNN
-F 3 "" H 650 3450 60  0000 C CNN
+F 3 "http://futurlec.com/Connectors/HEADS40.shtml" H 650 3450 60  0001 C CNN
+F 4 "Futurlec" H 650 3450 60  0001 C CNN "Supplier"
+F 5 "HEADS40" H 650 3450 60  0001 C CNN "Supplier ref"
 	1    650  3450
 	-1   0    0    1   
 $EndComp
