@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/home/alex/antdroid/antdroid-board/antdroid-board.sch</source>
-    <date>Mon 13 Jul 2015 22:44:15 CEST</date>
+    <date>Mon 13 Jul 2015 23:14:03 CEST</date>
     <tool>Eeschema (2015-07-04 BZR 5884)-product</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -197,7 +197,7 @@
     </comp>
     <comp ref="D4">
       <value>LED</value>
-      <footprint>LEDs:LED-0603</footprint>
+      <footprint>antdroid-board:LED-0603</footprint>
       <datasheet>http://www.mouser.com/ds/2/311/LB%20Q39G%20-%20CHIPLED%200603-553388.pdf</datasheet>
       <fields>
         <field name="Supplier">Mouser</field>
@@ -473,15 +473,20 @@
       <tstamp>559DDEEC</tstamp>
     </comp>
     <comp ref="R1">
-      <value>30.1K</value>
+      <value>31.2K</value>
       <footprint>antdroid-board:R_0603_HandSoldering</footprint>
+      <datasheet>http://www.vishay.com/doc?28758</datasheet>
+      <fields>
+        <field name="Supplier">Mouser</field>
+        <field name="Supplier ref">71-TNPW060331K2BEEA</field>
+      </fields>
       <libsource lib="antdroid-board" part="R"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>559DDFF3</tstamp>
     </comp>
     <comp ref="D5">
       <value>LED</value>
-      <footprint>LEDs:LED-0603</footprint>
+      <footprint>antdroid-board:LED-0603</footprint>
       <libsource lib="antdroid-board" part="LED"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>559FEA16</tstamp>
@@ -526,38 +531,15 @@
     </comp>
   </components>
   <libparts>
-    <libpart lib="antdroid-board" part="CONN_01X01">
-      <footprints>
-        <fp>Pin_Header_Straight_1X01</fp>
-        <fp>Pin_Header_Angled_1X01</fp>
-        <fp>Socket_Strip_Straight_1X01</fp>
-        <fp>Socket_Strip_Angled_1X01</fp>
-      </footprints>
+    <libpart lib="antdroid-board" part="1N5822">
       <fields>
-        <field name="Reference">P</field>
-        <field name="Value">CONN_01X01</field>
+        <field name="Reference">D</field>
+        <field name="Value">1N5822</field>
+        <field name="Footprint">diode-1-C4111-15</field>
       </fields>
       <pins>
-        <pin num="1" name="P1" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="antdroid-board" part="CP">
-      <description>Polarised capacitor</description>
-      <footprints>
-        <fp>CP*</fp>
-        <fp>Elko*</fp>
-        <fp>TantalC*</fp>
-        <fp>C*elec</fp>
-        <fp>c_elec*</fp>
-        <fp>SMD*_Pol</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">C</field>
-        <field name="Value">CP</field>
-      </fields>
-      <pins>
-        <pin num="1" name="~" type="passive"/>
-        <pin num="2" name="~" type="passive"/>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="antdroid-board" part="ARDUINO_MEGA_SHIELD">
@@ -650,17 +632,6 @@
         <pin num="V_IN" name="V_IN" type="power_in"/>
       </pins>
     </libpart>
-    <libpart lib="antdroid-board" part="1N5822">
-      <fields>
-        <field name="Reference">D</field>
-        <field name="Value">1N5822</field>
-        <field name="Footprint">diode-1-C4111-15</field>
-      </fields>
-      <pins>
-        <pin num="1" name="1" type="passive"/>
-        <pin num="2" name="2" type="passive"/>
-      </pins>
-    </libpart>
     <libpart lib="antdroid-board" part="BSS138">
       <footprints>
         <fp>SOT-23*</fp>
@@ -694,29 +665,34 @@
         <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="antdroid-board" part="PINHD-1X5">
-      <fields>
-        <field name="Reference">JP</field>
-        <field name="Value">PINHD-1X5</field>
-        <field name="Footprint">pinhead-1X05</field>
-      </fields>
-      <pins>
-        <pin num="1" name="1" type="passive"/>
-        <pin num="2" name="2" type="passive"/>
-        <pin num="3" name="3" type="passive"/>
-        <pin num="4" name="4" type="passive"/>
-        <pin num="5" name="5" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="antdroid-board" part="R">
-      <description>Resistor</description>
+    <libpart lib="antdroid-board" part="CONN_01X01">
       <footprints>
-        <fp>R_*</fp>
-        <fp>Resistor_*</fp>
+        <fp>Pin_Header_Straight_1X01</fp>
+        <fp>Pin_Header_Angled_1X01</fp>
+        <fp>Socket_Strip_Straight_1X01</fp>
+        <fp>Socket_Strip_Angled_1X01</fp>
       </footprints>
       <fields>
-        <field name="Reference">R</field>
-        <field name="Value">R</field>
+        <field name="Reference">P</field>
+        <field name="Value">CONN_01X01</field>
+      </fields>
+      <pins>
+        <pin num="1" name="P1" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="antdroid-board" part="CP">
+      <description>Polarised capacitor</description>
+      <footprints>
+        <fp>CP*</fp>
+        <fp>Elko*</fp>
+        <fp>TantalC*</fp>
+        <fp>C*elec</fp>
+        <fp>c_elec*</fp>
+        <fp>SMD*_Pol</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP</field>
       </fields>
       <pins>
         <pin num="1" name="~" type="passive"/>
@@ -842,6 +818,35 @@
         <pin num="2" name="2" type="passive"/>
         <pin num="3" name="3" type="passive"/>
         <pin num="4" name="4" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="antdroid-board" part="PINHD-1X5">
+      <fields>
+        <field name="Reference">JP</field>
+        <field name="Value">PINHD-1X5</field>
+        <field name="Footprint">pinhead-1X05</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="antdroid-board" part="R">
+      <description>Resistor</description>
+      <footprints>
+        <fp>R_*</fp>
+        <fp>Resistor_*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">R</field>
+        <field name="Value">R</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
   </libparts>

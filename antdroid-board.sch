@@ -2,6 +2,7 @@ EESchema Schematic File Version 2
 LIBS:antdroid-board
 LIBS:dc-dc
 LIBS:power
+LIBS:antdroid-board-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
@@ -1574,9 +1575,11 @@ L R R1
 U 1 1 559DDFF3
 P 3300 4200
 F 0 "R1" H 3400 4250 50  0000 C CNN
-F 1 "30.1K" H 3450 4150 50  0000 C CNN
+F 1 "31.2K" H 3450 4150 50  0000 C CNN
 F 2 "antdroid-board:R_0603_HandSoldering" V 3230 4200 30  0001 C CNN
-F 3 "" H 3300 4200 30  0000 C CNN
+F 3 "http://www.vishay.com/doc?28758" H 3300 4200 30  0001 C CNN
+F 4 "Mouser" H 3300 4200 60  0001 C CNN "Supplier"
+F 5 "71-TNPW060331K2BEEA" H 3300 4200 60  0001 C CNN "Supplier ref"
 	1    3300 4200
 	1    0    0    -1  
 $EndComp

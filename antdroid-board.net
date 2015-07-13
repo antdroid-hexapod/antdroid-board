@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/alex/antdroid/antdroid-board/antdroid-board.sch)
-    (date "Mon 13 Jul 2015 22:47:22 CEST")
+    (date "Mon 13 Jul 2015 23:13:58 CEST")
     (tool "Eeschema (2015-07-04 BZR 5884)-product")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -400,8 +400,12 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 559DDEEC))
     (comp (ref R1)
-      (value 30.1K)
+      (value 31.2K)
       (footprint antdroid-board:R_0603_HandSoldering)
+      (datasheet http://www.vishay.com/doc?28758)
+      (fields
+        (field (name Supplier) Mouser)
+        (field (name "Supplier ref") 71-TNPW060331K2BEEA))
       (libsource (lib antdroid-board) (part R))
       (sheetpath (names /) (tstamps /))
       (tstamp 559DDFF3))
@@ -444,32 +448,14 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 55A377CB)))
   (libparts
-    (libpart (lib antdroid-board) (part CONN_01X01)
-      (footprints
-        (fp Pin_Header_Straight_1X01)
-        (fp Pin_Header_Angled_1X01)
-        (fp Socket_Strip_Straight_1X01)
-        (fp Socket_Strip_Angled_1X01))
+    (libpart (lib antdroid-board) (part 1N5822)
       (fields
-        (field (name Reference) P)
-        (field (name Value) CONN_01X01))
+        (field (name Reference) D)
+        (field (name Value) 1N5822)
+        (field (name Footprint) diode-1-C4111-15))
       (pins
-        (pin (num 1) (name P1) (type passive))))
-    (libpart (lib antdroid-board) (part CP)
-      (description "Polarised capacitor")
-      (footprints
-        (fp CP*)
-        (fp Elko*)
-        (fp TantalC*)
-        (fp C*elec)
-        (fp c_elec*)
-        (fp SMD*_Pol))
-      (fields
-        (field (name Reference) C)
-        (field (name Value) CP))
-      (pins
-        (pin (num 1) (name ~) (type passive))
-        (pin (num 2) (name ~) (type passive))))
+        (pin (num 1) (name 1) (type passive))
+        (pin (num 2) (name 2) (type passive))))
     (libpart (lib antdroid-board) (part ARDUINO_MEGA_SHIELD)
       (fields
         (field (name Reference) SHIELD)
@@ -557,14 +543,6 @@
         (pin (num GND5) (name GND5) (type power_in))
         (pin (num RST) (name RST) (type input))
         (pin (num V_IN) (name V_IN) (type power_in))))
-    (libpart (lib antdroid-board) (part 1N5822)
-      (fields
-        (field (name Reference) D)
-        (field (name Value) 1N5822)
-        (field (name Footprint) diode-1-C4111-15))
-      (pins
-        (pin (num 1) (name 1) (type passive))
-        (pin (num 2) (name 2) (type passive))))
     (libpart (lib antdroid-board) (part BSS138)
       (footprints
         (fp SOT-23*))
@@ -590,25 +568,29 @@
       (pins
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive))))
-    (libpart (lib antdroid-board) (part PINHD-1X5)
-      (fields
-        (field (name Reference) JP)
-        (field (name Value) PINHD-1X5)
-        (field (name Footprint) pinhead-1X05))
-      (pins
-        (pin (num 1) (name 1) (type passive))
-        (pin (num 2) (name 2) (type passive))
-        (pin (num 3) (name 3) (type passive))
-        (pin (num 4) (name 4) (type passive))
-        (pin (num 5) (name 5) (type passive))))
-    (libpart (lib antdroid-board) (part R)
-      (description Resistor)
+    (libpart (lib antdroid-board) (part CONN_01X01)
       (footprints
-        (fp R_*)
-        (fp Resistor_*))
+        (fp Pin_Header_Straight_1X01)
+        (fp Pin_Header_Angled_1X01)
+        (fp Socket_Strip_Straight_1X01)
+        (fp Socket_Strip_Angled_1X01))
       (fields
-        (field (name Reference) R)
-        (field (name Value) R))
+        (field (name Reference) P)
+        (field (name Value) CONN_01X01))
+      (pins
+        (pin (num 1) (name P1) (type passive))))
+    (libpart (lib antdroid-board) (part CP)
+      (description "Polarised capacitor")
+      (footprints
+        (fp CP*)
+        (fp Elko*)
+        (fp TantalC*)
+        (fp C*elec)
+        (fp c_elec*)
+        (fp SMD*_Pol))
+      (fields
+        (field (name Reference) C)
+        (field (name Value) CP))
       (pins
         (pin (num 1) (name ~) (type passive))
         (pin (num 2) (name ~) (type passive))))
@@ -704,7 +686,29 @@
         (pin (num 1) (name 1) (type passive))
         (pin (num 2) (name 2) (type passive))
         (pin (num 3) (name 3) (type passive))
-        (pin (num 4) (name 4) (type passive)))))
+        (pin (num 4) (name 4) (type passive))))
+    (libpart (lib antdroid-board) (part PINHD-1X5)
+      (fields
+        (field (name Reference) JP)
+        (field (name Value) PINHD-1X5)
+        (field (name Footprint) pinhead-1X05))
+      (pins
+        (pin (num 1) (name 1) (type passive))
+        (pin (num 2) (name 2) (type passive))
+        (pin (num 3) (name 3) (type passive))
+        (pin (num 4) (name 4) (type passive))
+        (pin (num 5) (name 5) (type passive))))
+    (libpart (lib antdroid-board) (part R)
+      (description Resistor)
+      (footprints
+        (fp R_*)
+        (fp Resistor_*))
+      (fields
+        (field (name Reference) R)
+        (field (name Value) R))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive)))))
   (libraries
     (library (logical antdroid-board)
       (uri /home/alex/antdroid/antdroid-board/libs/antdroid-board.lib)))
