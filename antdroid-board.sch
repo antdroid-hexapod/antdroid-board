@@ -1576,7 +1576,7 @@ F 1 "31.2K" H 3450 4150 50  0000 C CNN
 F 2 "antdroid-board:R_0603_HandSoldering" V 3230 4200 30  0001 C CNN
 F 3 "http://www.vishay.com/doc?28758" H 3300 4200 30  0001 C CNN
 F 4 "Mouser" H 3300 4200 60  0001 C CNN "Supplier"
-F 5 "71-TNPW060331K2BEEA" H 3300 4200 60  0001 C CNN "Supplier ref"
+F 5 "71-TNPW060331K2BEEN" H 3300 4200 60  0001 C CNN "Supplier ref"
 	1    3300 4200
 	1    0    0    -1  
 $EndComp

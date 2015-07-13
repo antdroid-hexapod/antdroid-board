@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/home/alex/antdroid/antdroid-board/antdroid-board.sch</source>
-    <date>Tue 14 Jul 2015 00:30:52 CEST</date>
+    <date>Tue 14 Jul 2015 00:50:45 CEST</date>
     <tool>Eeschema (2015-07-04 BZR 5884)-product</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -478,7 +478,7 @@
       <datasheet>http://www.vishay.com/doc?28758</datasheet>
       <fields>
         <field name="Supplier">Mouser</field>
-        <field name="Supplier ref">71-TNPW060331K2BEEA</field>
+        <field name="Supplier ref">71-TNPW060331K2BEEN</field>
       </fields>
       <libsource lib="antdroid-board" part="R"/>
       <sheetpath names="/" tstamps="/"/>
@@ -538,6 +538,106 @@
     </comp>
   </components>
   <libparts>
+    <libpart lib="antdroid-board" part="LM2675M-12">
+      <aliases>
+        <alias>LM2675M-3.3</alias>
+        <alias>LM2675M-5</alias>
+        <alias>LM2675M-ADJ</alias>
+      </aliases>
+      <description>LM2675M, 12V, 1A Step-Down VR</description>
+      <docs>www.national.com/ds/LM/LM2675.pdf</docs>
+      <footprints>
+        <fp>SO*</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">U</field>
+        <field name="Value">LM2675M-12</field>
+        <field name="Footprint">SOIC-8</field>
+      </fields>
+      <pins>
+        <pin num="1" name="CB" type="input"/>
+        <pin num="4" name="FB" type="input"/>
+        <pin num="5" name="ON/~OFF" type="input"/>
+        <pin num="6" name="GND" type="power_in"/>
+        <pin num="7" name="VIN" type="power_in"/>
+        <pin num="8" name="VSW" type="output"/>
+      </pins>
+    </libpart>
+    <libpart lib="antdroid-board" part="1N5822">
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">1N5822</field>
+        <field name="Footprint">diode-1-C4111-15</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="antdroid-board" part="LED">
+      <footprints>
+        <fp>LED-3MM</fp>
+        <fp>LED-5MM</fp>
+        <fp>LED-10MM</fp>
+        <fp>LED-0603</fp>
+        <fp>LED-0805</fp>
+        <fp>LED-1206</fp>
+        <fp>LEDV</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">D</field>
+        <field name="Value">LED</field>
+      </fields>
+      <pins>
+        <pin num="1" name="K" type="passive"/>
+        <pin num="2" name="A" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="antdroid-board" part="CP">
+      <description>Polarised capacitor</description>
+      <footprints>
+        <fp>CP*</fp>
+        <fp>Elko*</fp>
+        <fp>TantalC*</fp>
+        <fp>C*elec</fp>
+        <fp>c_elec*</fp>
+        <fp>SMD*_Pol</fp>
+      </footprints>
+      <fields>
+        <field name="Reference">C</field>
+        <field name="Value">CP</field>
+      </fields>
+      <pins>
+        <pin num="1" name="~" type="passive"/>
+        <pin num="2" name="~" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="antdroid-board" part="PINHD-1X3_2.54">
+      <fields>
+        <field name="Reference">JP</field>
+        <field name="Value">PINHD-1X3_2.54</field>
+        <field name="Footprint">pinhead-1-1X03</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+      </pins>
+    </libpart>
+    <libpart lib="antdroid-board" part="PINHD-1X5">
+      <fields>
+        <field name="Reference">JP</field>
+        <field name="Value">PINHD-1X5</field>
+        <field name="Footprint">pinhead-1X05</field>
+      </fields>
+      <pins>
+        <pin num="1" name="1" type="passive"/>
+        <pin num="2" name="2" type="passive"/>
+        <pin num="3" name="3" type="passive"/>
+        <pin num="4" name="4" type="passive"/>
+        <pin num="5" name="5" type="passive"/>
+      </pins>
+    </libpart>
     <libpart lib="antdroid-board" part="R">
       <description>Resistor</description>
       <footprints>
@@ -568,29 +668,6 @@
         <pin num="1" name="P1" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="antdroid-board" part="LM2678T">
-      <aliases>
-        <alias>LM2678T-5.0</alias>
-      </aliases>
-      <description>LM2678T 5A Step-Down Voltage Regulator</description>
-      <docs>www.ti.com/lit/ds/symlink/lm2678.pdf</docs>
-      <footprints>
-        <fp>TO-220</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">U</field>
-        <field name="Value">LM2678T</field>
-        <field name="Footprint">TO-220</field>
-      </fields>
-      <pins>
-        <pin num="1" name="VSW" type="power_out"/>
-        <pin num="2" name="VIN" type="power_in"/>
-        <pin num="3" name="CB" type="input"/>
-        <pin num="4" name="GND" type="power_in"/>
-        <pin num="6" name="FB" type="input"/>
-        <pin num="7" name="ON/~OFF" type="input"/>
-      </pins>
-    </libpart>
     <libpart lib="antdroid-board" part="MBR745G">
       <aliases>
         <alias>MBR745</alias>
@@ -608,25 +685,6 @@
       <pins>
         <pin num="1" name="1" type="passive"/>
         <pin num="2" name="2" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="antdroid-board" part="CP">
-      <description>Polarised capacitor</description>
-      <footprints>
-        <fp>CP*</fp>
-        <fp>Elko*</fp>
-        <fp>TantalC*</fp>
-        <fp>C*elec</fp>
-        <fp>c_elec*</fp>
-        <fp>SMD*_Pol</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">C</field>
-        <field name="Value">CP</field>
-      </fields>
-      <pins>
-        <pin num="1" name="~" type="passive"/>
-        <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="antdroid-board" part="PINHD-1X4_2.54">
@@ -742,64 +800,6 @@
         <pin num="2" name="2" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="antdroid-board" part="PINHD-1X5">
-      <fields>
-        <field name="Reference">JP</field>
-        <field name="Value">PINHD-1X5</field>
-        <field name="Footprint">pinhead-1X05</field>
-      </fields>
-      <pins>
-        <pin num="1" name="1" type="passive"/>
-        <pin num="2" name="2" type="passive"/>
-        <pin num="3" name="3" type="passive"/>
-        <pin num="4" name="4" type="passive"/>
-        <pin num="5" name="5" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="antdroid-board" part="LED">
-      <footprints>
-        <fp>LED-3MM</fp>
-        <fp>LED-5MM</fp>
-        <fp>LED-10MM</fp>
-        <fp>LED-0603</fp>
-        <fp>LED-0805</fp>
-        <fp>LED-1206</fp>
-        <fp>LEDV</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">D</field>
-        <field name="Value">LED</field>
-      </fields>
-      <pins>
-        <pin num="1" name="K" type="passive"/>
-        <pin num="2" name="A" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="antdroid-board" part="LM2675M-12">
-      <aliases>
-        <alias>LM2675M-3.3</alias>
-        <alias>LM2675M-5</alias>
-        <alias>LM2675M-ADJ</alias>
-      </aliases>
-      <description>LM2675M, 12V, 1A Step-Down VR</description>
-      <docs>www.national.com/ds/LM/LM2675.pdf</docs>
-      <footprints>
-        <fp>SO*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">U</field>
-        <field name="Value">LM2675M-12</field>
-        <field name="Footprint">SOIC-8</field>
-      </fields>
-      <pins>
-        <pin num="1" name="CB" type="input"/>
-        <pin num="4" name="FB" type="input"/>
-        <pin num="5" name="ON/~OFF" type="input"/>
-        <pin num="6" name="GND" type="power_in"/>
-        <pin num="7" name="VIN" type="power_in"/>
-        <pin num="8" name="VSW" type="output"/>
-      </pins>
-    </libpart>
     <libpart lib="antdroid-board" part="C">
       <description>Unpolarized capacitor</description>
       <footprints>
@@ -818,27 +818,27 @@
         <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="antdroid-board" part="PINHD-1X3_2.54">
+    <libpart lib="antdroid-board" part="LM2678T">
+      <aliases>
+        <alias>LM2678T-5.0</alias>
+      </aliases>
+      <description>LM2678T 5A Step-Down Voltage Regulator</description>
+      <docs>www.ti.com/lit/ds/symlink/lm2678.pdf</docs>
+      <footprints>
+        <fp>TO-220</fp>
+      </footprints>
       <fields>
-        <field name="Reference">JP</field>
-        <field name="Value">PINHD-1X3_2.54</field>
-        <field name="Footprint">pinhead-1-1X03</field>
+        <field name="Reference">U</field>
+        <field name="Value">LM2678T</field>
+        <field name="Footprint">TO-220</field>
       </fields>
       <pins>
-        <pin num="1" name="1" type="passive"/>
-        <pin num="2" name="2" type="passive"/>
-        <pin num="3" name="3" type="passive"/>
-      </pins>
-    </libpart>
-    <libpart lib="antdroid-board" part="1N5822">
-      <fields>
-        <field name="Reference">D</field>
-        <field name="Value">1N5822</field>
-        <field name="Footprint">diode-1-C4111-15</field>
-      </fields>
-      <pins>
-        <pin num="1" name="1" type="passive"/>
-        <pin num="2" name="2" type="passive"/>
+        <pin num="1" name="VSW" type="power_out"/>
+        <pin num="2" name="VIN" type="power_in"/>
+        <pin num="3" name="CB" type="input"/>
+        <pin num="4" name="GND" type="power_in"/>
+        <pin num="6" name="FB" type="input"/>
+        <pin num="7" name="ON/~OFF" type="input"/>
       </pins>
     </libpart>
     <libpart lib="antdroid-board" part="BSS138">
