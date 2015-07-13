@@ -1,4 +1,4 @@
-update=Mon 13 Jul 2015 23:26:39 CEST
+update=Tue 14 Jul 2015 00:54:25 CEST
 version=1
 last_client=kicad
 [cvpcb]
@@ -30,3 +30,13 @@ version=1
 LibDir=/home/alex/antdroid/antdroid-board/libs
 [eeschema/libraries]
 LibName1=antdroid-board
+[schematic_editor]
+version=1
+PageLayoutDescrFile=
+PlotDirectoryName=output/
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=
+SpiceForceRefPrefix=0
+SpiceUseNetNumbers=0
+LabSize=60
