@@ -1,6 +1,6 @@
 EESchema Schematic File Version 2
 LIBS:antdroid-board
-LIBS:antdroid-board-cache
+LIBS:power
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268

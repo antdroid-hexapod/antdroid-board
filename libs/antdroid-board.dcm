@@ -8,6 +8,14 @@ $CMP +5VA
 K POWER, PWR
 $ENDCMP
 #
+$CMP +5VD
+K POWER, PWR
+$ENDCMP
+#
+$CMP +5VP
+K POWER, PWR
+$ENDCMP
+#
 $CMP C
 D Unpolarized capacitor
 $ENDCMP

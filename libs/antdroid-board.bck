@@ -20,6 +20,10 @@ $CMP GND
 K POWER, PWR
 $ENDCMP
 #
+$CMP LED
+K LED
+$ENDCMP
+#
 $CMP LM2678T
 D LM2678T 5A Step-Down Voltage Regulator
 K SIMPLE SWITCHER® Step-Down Voltage Regulator 5A
