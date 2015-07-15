@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/alex/antdroid/antdroid-board/antdroid-board.sch)
-    (date "Tue 14 Jul 2015 00:21:19 CEST")
+    (date "Wed 15 Jul 2015 17:52:23 CEST")
     (tool "Eeschema (2015-07-04 BZR 5884)-product")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -400,12 +400,12 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 559DDEEC))
     (comp (ref R1)
-      (value 31.2K)
+      (value 33K)
       (footprint antdroid-board:R_0603_HandSoldering)
-      (datasheet http://www.vishay.com/doc?28758)
+      (datasheet http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf)
       (fields
         (field (name Supplier) Mouser)
-        (field (name "Supplier ref") 71-TNPW060331K2BEEA))
+        (field (name "Supplier ref") 71-CRCW0603-33K-E3))
       (libsource (lib antdroid-board) (part R))
       (sheetpath (names /) (tstamps /))
       (tstamp 559DDFF3))
@@ -454,85 +454,14 @@
       (sheetpath (names /) (tstamps /))
       (tstamp 55A489D2)))
   (libparts
-    (libpart (lib antdroid-board) (part R)
-      (description Resistor)
-      (footprints
-        (fp R_*)
-        (fp Resistor_*))
-      (fields
-        (field (name Reference) R)
-        (field (name Value) R))
-      (pins
-        (pin (num 1) (name ~) (type passive))
-        (pin (num 2) (name ~) (type passive))))
-    (libpart (lib antdroid-board) (part CONN_01X01)
-      (footprints
-        (fp Pin_Header_Straight_1X01)
-        (fp Pin_Header_Angled_1X01)
-        (fp Socket_Strip_Straight_1X01)
-        (fp Socket_Strip_Angled_1X01))
-      (fields
-        (field (name Reference) P)
-        (field (name Value) CONN_01X01))
-      (pins
-        (pin (num 1) (name P1) (type passive))))
-    (libpart (lib antdroid-board) (part LM2678T)
-      (aliases
-        (alias LM2678T-5.0))
-      (description "LM2678T 5A Step-Down Voltage Regulator")
-      (docs www.ti.com/lit/ds/symlink/lm2678.pdf)
-      (footprints
-        (fp TO-220))
-      (fields
-        (field (name Reference) U)
-        (field (name Value) LM2678T)
-        (field (name Footprint) TO-220))
-      (pins
-        (pin (num 1) (name VSW) (type power_out))
-        (pin (num 2) (name VIN) (type power_in))
-        (pin (num 3) (name CB) (type input))
-        (pin (num 4) (name GND) (type power_in))
-        (pin (num 6) (name FB) (type input))
-        (pin (num 7) (name ON/~OFF) (type input))))
-    (libpart (lib antdroid-board) (part MBR745G)
-      (aliases
-        (alias MBR745))
-      (description "MBR745 - 7.5A 45V Schottky Barrier Diode")
-      (docs http://www.futurlec.com/Diodes/MBR745G.shtml)
-      (footprints
-        (fp TO-220))
+    (libpart (lib antdroid-board) (part 1N5822)
       (fields
         (field (name Reference) D)
-        (field (name Value) MBR745G)
-        (field (name Footprint) DO-204AL))
+        (field (name Value) 1N5822)
+        (field (name Footprint) diode-1-C4111-15))
       (pins
         (pin (num 1) (name 1) (type passive))
         (pin (num 2) (name 2) (type passive))))
-    (libpart (lib antdroid-board) (part CP)
-      (description "Polarised capacitor")
-      (footprints
-        (fp CP*)
-        (fp Elko*)
-        (fp TantalC*)
-        (fp C*elec)
-        (fp c_elec*)
-        (fp SMD*_Pol))
-      (fields
-        (field (name Reference) C)
-        (field (name Value) CP))
-      (pins
-        (pin (num 1) (name ~) (type passive))
-        (pin (num 2) (name ~) (type passive))))
-    (libpart (lib antdroid-board) (part PINHD-1X4_2.54)
-      (fields
-        (field (name Reference) JP)
-        (field (name Value) PINHD-1X4_2.54)
-        (field (name Footprint) pinhead-1-1X04))
-      (pins
-        (pin (num 1) (name 1) (type passive))
-        (pin (num 2) (name 2) (type passive))
-        (pin (num 3) (name 3) (type passive))
-        (pin (num 4) (name 4) (type passive))))
     (libpart (lib antdroid-board) (part ARDUINO_MEGA_SHIELD)
       (fields
         (field (name Reference) SHIELD)
@@ -620,6 +549,57 @@
         (pin (num GND5) (name GND5) (type power_in))
         (pin (num RST) (name RST) (type input))
         (pin (num V_IN) (name V_IN) (type power_in))))
+    (libpart (lib antdroid-board) (part BSS138)
+      (footprints
+        (fp SOT-23*))
+      (fields
+        (field (name Reference) Q)
+        (field (name Value) BSS138)
+        (field (name Footprint) SOT-23))
+      (pins
+        (pin (num 1) (name G) (type passive))
+        (pin (num 2) (name S) (type passive))
+        (pin (num 3) (name D) (type passive))))
+    (libpart (lib antdroid-board) (part C)
+      (description "Unpolarized capacitor")
+      (footprints
+        (fp C?)
+        (fp C_????_*)
+        (fp C_????)
+        (fp SMD*_c)
+        (fp Capacitor*))
+      (fields
+        (field (name Reference) C)
+        (field (name Value) C))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))))
+    (libpart (lib antdroid-board) (part CONN_01X01)
+      (footprints
+        (fp Pin_Header_Straight_1X01)
+        (fp Pin_Header_Angled_1X01)
+        (fp Socket_Strip_Straight_1X01)
+        (fp Socket_Strip_Angled_1X01))
+      (fields
+        (field (name Reference) P)
+        (field (name Value) CONN_01X01))
+      (pins
+        (pin (num 1) (name P1) (type passive))))
+    (libpart (lib antdroid-board) (part CP)
+      (description "Polarised capacitor")
+      (footprints
+        (fp CP*)
+        (fp Elko*)
+        (fp TantalC*)
+        (fp C*elec)
+        (fp c_elec*)
+        (fp SMD*_Pol))
+      (fields
+        (field (name Reference) C)
+        (field (name Value) CP))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive))))
     (libpart (lib antdroid-board) (part INDUCTOR)
       (fields
         (field (name Reference) L)
@@ -627,17 +607,6 @@
       (pins
         (pin (num 1) (name 1) (type passive))
         (pin (num 2) (name 2) (type passive))))
-    (libpart (lib antdroid-board) (part PINHD-1X5)
-      (fields
-        (field (name Reference) JP)
-        (field (name Value) PINHD-1X5)
-        (field (name Footprint) pinhead-1X05))
-      (pins
-        (pin (num 1) (name 1) (type passive))
-        (pin (num 2) (name 2) (type passive))
-        (pin (num 3) (name 3) (type passive))
-        (pin (num 4) (name 4) (type passive))
-        (pin (num 5) (name 5) (type passive))))
     (libpart (lib antdroid-board) (part LED)
       (footprints
         (fp LED-3MM)
@@ -673,20 +642,38 @@
         (pin (num 6) (name GND) (type power_in))
         (pin (num 7) (name VIN) (type power_in))
         (pin (num 8) (name VSW) (type output))))
-    (libpart (lib antdroid-board) (part C)
-      (description "Unpolarized capacitor")
+    (libpart (lib antdroid-board) (part LM2678T)
+      (aliases
+        (alias LM2678T-5.0))
+      (description "LM2678T 5A Step-Down Voltage Regulator")
+      (docs www.ti.com/lit/ds/symlink/lm2678.pdf)
       (footprints
-        (fp C?)
-        (fp C_????_*)
-        (fp C_????)
-        (fp SMD*_c)
-        (fp Capacitor*))
+        (fp TO-220))
       (fields
-        (field (name Reference) C)
-        (field (name Value) C))
+        (field (name Reference) U)
+        (field (name Value) LM2678T)
+        (field (name Footprint) TO-220))
       (pins
-        (pin (num 1) (name ~) (type passive))
-        (pin (num 2) (name ~) (type passive))))
+        (pin (num 1) (name VSW) (type power_out))
+        (pin (num 2) (name VIN) (type power_in))
+        (pin (num 3) (name CB) (type input))
+        (pin (num 4) (name GND) (type power_in))
+        (pin (num 6) (name FB) (type input))
+        (pin (num 7) (name ON/~OFF) (type input))))
+    (libpart (lib antdroid-board) (part MBR745G)
+      (aliases
+        (alias MBR745))
+      (description "MBR745 - 7.5A 45V Schottky Barrier Diode")
+      (docs http://www.futurlec.com/Diodes/MBR745G.shtml)
+      (footprints
+        (fp TO-220))
+      (fields
+        (field (name Reference) D)
+        (field (name Value) MBR745G)
+        (field (name Footprint) DO-204AL))
+      (pins
+        (pin (num 1) (name 1) (type passive))
+        (pin (num 2) (name 2) (type passive))))
     (libpart (lib antdroid-board) (part PINHD-1X3_2.54)
       (fields
         (field (name Reference) JP)
@@ -696,25 +683,38 @@
         (pin (num 1) (name 1) (type passive))
         (pin (num 2) (name 2) (type passive))
         (pin (num 3) (name 3) (type passive))))
-    (libpart (lib antdroid-board) (part 1N5822)
+    (libpart (lib antdroid-board) (part PINHD-1X4_2.54)
       (fields
-        (field (name Reference) D)
-        (field (name Value) 1N5822)
-        (field (name Footprint) diode-1-C4111-15))
+        (field (name Reference) JP)
+        (field (name Value) PINHD-1X4_2.54)
+        (field (name Footprint) pinhead-1-1X04))
       (pins
         (pin (num 1) (name 1) (type passive))
-        (pin (num 2) (name 2) (type passive))))
-    (libpart (lib antdroid-board) (part BSS138)
-      (footprints
-        (fp SOT-23*))
+        (pin (num 2) (name 2) (type passive))
+        (pin (num 3) (name 3) (type passive))
+        (pin (num 4) (name 4) (type passive))))
+    (libpart (lib antdroid-board) (part PINHD-1X5)
       (fields
-        (field (name Reference) Q)
-        (field (name Value) BSS138)
-        (field (name Footprint) SOT-23))
+        (field (name Reference) JP)
+        (field (name Value) PINHD-1X5)
+        (field (name Footprint) pinhead-1X05))
       (pins
-        (pin (num 1) (name G) (type passive))
-        (pin (num 2) (name S) (type passive))
-        (pin (num 3) (name D) (type passive)))))
+        (pin (num 1) (name 1) (type passive))
+        (pin (num 2) (name 2) (type passive))
+        (pin (num 3) (name 3) (type passive))
+        (pin (num 4) (name 4) (type passive))
+        (pin (num 5) (name 5) (type passive))))
+    (libpart (lib antdroid-board) (part R)
+      (description Resistor)
+      (footprints
+        (fp R_*)
+        (fp Resistor_*))
+      (fields
+        (field (name Reference) R)
+        (field (name Value) R))
+      (pins
+        (pin (num 1) (name ~) (type passive))
+        (pin (num 2) (name ~) (type passive)))))
   (libraries
     (library (logical antdroid-board)
       (uri /home/alex/antdroid/antdroid-board/libs/antdroid-board.lib)))
