@@ -250,7 +250,7 @@ F 1 "LM2675M-5" H 8800 5950 50  0000 L CNN
 F 2 "antdroid-board:AB2_SO08" H 9500 5250 50  0001 C CIN
 F 3 "http://www.futurlec.com/Linear/LM2675.shtml" H 9200 5600 50  0001 C CNN
 F 4 "Futurlec" H 9200 5600 60  0001 C CNN "Supplier"
-F 5 "LM2675" H 9200 5600 60  0001 C CNN "Supplier ref"
+F 5 "LM2675-5" H 9200 5600 60  0001 C CNN "Supplier ref"
 	1    9200 5600
 	1    0    0    -1  
 $EndComp

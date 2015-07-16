@@ -3,3 +3,5 @@
 *.kicad_pcb-bak
 *-cache.*
 *-rescue.lib
+gerber.zip
+order
