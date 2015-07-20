@@ -1,5 +1,6 @@
 # Antdroid Board
-This is a board for Antdroid robot that improve the features of the prototipe robot.
+Shield for Arduino Mega used in [Antdroid](https://github.com/antdroid-hexapod/antdroid).
+![Antdroid Board](https://raw.githubusercontent.com/antdroid-hexapod/antdroid-board/master/render/antdroid-board-top-no-background.png)
 ## Board features
 * Two power supply of 5V 5A for servos.
 * 19 servos pinheader connection
