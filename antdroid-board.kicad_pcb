@@ -44,7 +44,7 @@
   )
 
   (setup
-    (last_trace_width 1)
+    (last_trace_width 0.25)
     (user_trace_width 0.25)
     (user_trace_width 0.6)
     (user_trace_width 1)
@@ -2285,7 +2285,7 @@
     )
   )
 
-  (module antdroid-board:R_0603_HandSoldering (layer F.Cu) (tedit 55A42F95) (tstamp 55A3ECD6)
+  (module antdroid-board:R_0603_HandSoldering (layer F.Cu) (tedit 560A6900) (tstamp 55A3ECD6)
     (at 147.9042 121.0564)
     (descr "Resistor SMD 0603, hand soldering")
     (tags "resistor 0603")
@@ -2294,7 +2294,7 @@
     (fp_text reference R1 (at -0.01524 1.65608) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 31.2K (at 0 1.9) (layer F.Fab)
+    (fp_text value 33K (at 0 1.9) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2 -0.8) (end 2 -0.8) (layer F.CrtYd) (width 0.05))
@@ -2459,7 +2459,7 @@
     )
   )
 
-  (module antdroid-board:R_0603_HandSoldering (layer F.Cu) (tedit 55A42FAB) (tstamp 55A3ED18)
+  (module antdroid-board:R_0603_HandSoldering (layer F.Cu) (tedit 560A68D5) (tstamp 55A3ED18)
     (at 189.103 101.854)
     (descr "Resistor SMD 0603, hand soldering")
     (tags "resistor 0603")
@@ -2468,7 +2468,7 @@
     (fp_text reference R7 (at 2.413 -1.524) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 150Ω (at 0 1.9) (layer F.Fab)
+    (fp_text value 1KΩ (at 0 1.9) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2 -0.8) (end 2 -0.8) (layer F.CrtYd) (width 0.05))
@@ -2488,7 +2488,7 @@
     )
   )
 
-  (module antdroid-board:R_0603_HandSoldering (layer F.Cu) (tedit 55A42FA0) (tstamp 55A3ED23)
+  (module antdroid-board:R_0603_HandSoldering (layer F.Cu) (tedit 560A68F5) (tstamp 55A3ED23)
     (at 188.3918 105.5624 270)
     (descr "Resistor SMD 0603, hand soldering")
     (tags "resistor 0603")
@@ -2497,7 +2497,7 @@
     (fp_text reference R8 (at 1.4986 -1.6002 270) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
-    (fp_text value 150Ω (at 0 1.9 270) (layer F.Fab)
+    (fp_text value 1KΩ (at 0 1.9 270) (layer F.Fab)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_line (start -2 -0.8) (end 2 -0.8) (layer F.CrtYd) (width 0.05))
