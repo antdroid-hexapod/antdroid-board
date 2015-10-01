@@ -209,11 +209,11 @@ L CP C11
 U 1 1 559C613B
 P 10550 1700
 F 0 "C11" H 10575 1800 50  0000 L CNN
-F 1 "1000µF/50V" H 10575 1600 50  0000 L CNN
+F 1 "1000µF/16V" H 10575 1600 50  0000 L CNN
 F 2 "antdroid-board:C_Radial_D12.5_L25_P5" H 10588 1550 30  0001 C CNN
-F 3 "http://www.futurlec.com/Capacitors/C1000U50E.shtml" H 10550 1700 60  0001 C CNN
+F 3 "http://futurlec.com/Capacitors/C1000U16E.shtml" H 10550 1700 60  0001 C CNN
 F 4 "Futurlec" H 10550 1700 60  0001 C CNN "Supplier"
-F 5 "C1000U50E" H 10550 1700 60  0001 C CNN "Supplier ref"
+F 5 "C1000U16E" H 10550 1700 60  0001 C CNN "Supplier ref"
 	1    10550 1700
 	1    0    0    -1  
 $EndComp
@@ -1115,9 +1115,9 @@ L CP C12
 U 1 1 559E20D3
 P 10550 3050
 F 0 "C12" H 10575 3150 50  0000 L CNN
-F 1 "1000µF/50V" H 10575 2950 50  0000 L CNN
+F 1 "1000µF/16V" H 10575 2950 50  0000 L CNN
 F 2 "antdroid-board:C_Radial_D12.5_L25_P5" H 10588 2900 30  0001 C CNN
-F 3 "http://www.futurlec.com/Capacitors/C1000U50E.shtml" H 10550 3050 60  0001 C CNN
+F 3 "http://futurlec.com/Capacitors/C1000U16E.shtml" H 10550 3050 60  0001 C CNN
 	1    10550 3050
 	1    0    0    -1  
 $EndComp

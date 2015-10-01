@@ -1,23 +1,25 @@
-Reference, Quantity, Value, Footprint, Datasheet, Supplier, Supplier ref
-C11 C12 ,2,1000µF/50V,antdroid-board:C_Radial_D12.5_L25_P5,http://www.futurlec.com/Capacitors/C1000U50E.shtml,Futurlec,C1000U50E
-C13 ,1,100µF/16V,antdroid-board:C_Radial_D5_L11_P2,http://www.futurlec.com/Capacitors/C100U16ESMD.shtml,Futurlec,C100U16ESMD
-C1 C2 C3 C4 ,4,470µF/25V,antdroid-board:C_Radial_D10_L13_P5,http://www.futurlec.com/Capacitors/C470U25E.shtml,Futurlec,C470U25E
-C5 C6 ,2,0.47µF,antdroid-board:C_Disc_D6_P5,http://www.futurlec.com/Capacitors/C470PC.shtml,Futurlec,C470PC
-C7 ,1,100µF/25V,antdroid-board:c_elec_6.3x7.7,http://www.futurlec.com/Capacitors/C100U25E.shtml,Futurlec,C100U25E
-C10 C8 C9 ,3,10nF,antdroid-board:C_0603_HandSoldering,
-D1 D2 ,2,MBR745G,antdroid-board:Diode_TO-220_Vertical,http://www.futurlec.com/Diodes/MBR745G.shtml,Futurlec,MBR745G
-D3 ,1,MBRS340,antdroid-board:Diode-DO-214AB_Handsoldering,http://www.mouser.com/ds/2/149/MBRS340-63506.pdf,Mouser,512-MBRS340
-D4 D5 ,2,LED,antdroid-board:LED-0603,http://www.mouser.com/ds/2/311/LB%20Q39G%20-%20CHIPLED%200603-553388.pdf,Mouser,720-LBQ39GL2N2351
-JP1 JP10 JP11 JP12 JP13 JP14 JP15 JP16 JP17 JP18 JP2 JP21 JP3 JP4 JP5 JP6 JP7 JP8 JP9 ,19,PINHD-1X3_2.54,antdroid-board:Pin_Header_Straight_1x03,http://futurlec.com/Connectors/HEADS40.shtml,Futurlec,HEADS40
-JP19 ,1,PINHD-1X5,antdroid-board:Pin_Header_Straight_1x05,http://futurlec.com/Connectors/HEADS40.shtml,Futurlec,HEADS40
-JP20 ,1,PINHD-1X4_2.54,antdroid-board:Pin_Header_Straight_1x04,http://futurlec.com/Connectors/HEADS40.shtml,Futurlec,HEADS40
-L1 L2 ,2,15µH/5.8A,antdroid-board:SELF-WE-PD-XXL,http://www.mouser.com/ds/2/54/SRR1210-60886.pdf,Mouser,652-SRR1210-150M
-L3 ,1,47µH/2A,antdroid-board:SELF-WE-PD-XXL,http://www.mouser.com/ds/2/390/CDRH124-465666.pdf,Mouser,CDRH124NP-470MC
-P1 P2 ,2,CONN_01X01,antdroid-board:1pin,
-Q1 Q2 ,2,BSS138,antdroid-board:SOT-23,http://www.futurlec.com/Transistors/BSS138.shtml,Futurlec,BSS138
-R1 ,1,33K,antdroid-board:R_0603_HandSoldering,http://www.mouser.com/ds/2/427/dcrcwe3-109170.pdf,Mouser,71-CRCW0603-33K-E3
-R2 R3 R4 R5 R6 ,5,10K,antdroid-board:R_0603_HandSoldering,
-R7 R8 ,2,150Ω,antdroid-board:R_0603_HandSoldering,http://www.mouser.com/ds/2/427/mcat_pro-223602.pdf,Mouser,594-MCT0603MD1500DP5
-SHIELD1 ,1,ARDUINO_MEGA_SHIELD,antdroid-board:ArduinoMegaShield,
-U1 U2 ,2,LM2678T-5.0,antdroid-board:TO-220-7C,www.ti.com/lit/ds/symlink/lm2678.pdf,Futurlec,LM2678T-5
-U3 ,1,LM2675M-5,antdroid-board:AB2_SO08,http://www.futurlec.com/Linear/LM2675.shtml,Futurlec,LM2675-5
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+1;"SHIELD1";"ArduinoMegaShield";1;"ARDUINO_MEGA_SHIELD";;;
+2;"G***";"OSHW-logo_silkscreen-front_10mm";1;"OSHW-logo_silkscreen-front_10mm";;;
+3;"C1,C2,C3,C4";"C_Radial_D10_L13_P5";4;"470µF/25V";;;
+4;"C5,C6";"C_Disc_D6_P5";2;"0.47µF";;;
+5;"C7";"c_elec_6.3x7.7";1;"100µF/25V";;;
+6;"C8,C9,C10";"C_0603_HandSoldering";3;"10nF";;;
+7;"C13";"C_Radial_D5_L11_P2";1;"100µF/16V";;;
+8;"D1,D2";"Diode_TO-220_Vertical";2;"MBR745G";;;
+9;"D3";"Diode-DO-214AB_Handsoldering";1;"MBRS340";;;
+10;"JP1,JP2,JP3,JP4,JP5,JP6,JP7,JP8,JP9,JP10,JP11,JP12,JP13,JP14,JP15,JP16,JP17,JP18,JP21";"Pin_Header_Straight_1x03";19;"PINHD-1X3_2.54";;;
+11;"JP19";"Pin_Header_Straight_1x05";1;"PINHD-1X5";;;
+12;"JP20";"Pin_Header_Straight_1x04";1;"PINHD-1X4_2.54";;;
+13;"L1,L2";"SELF-WE-PD-XXL";2;"15µH/5.8A";;;
+14;"P1,P2";"1pin";2;"CONN_01X01";;;
+15;"Q1,Q2";"SOT-23";2;"BSS138";;;
+16;"R1";"R_0603_HandSoldering";1;"33K";;;
+17;"R2,R3,R4,R5,R6";"R_0603_HandSoldering";5;"10K";;;
+18;"R7,R8";"R_0603_HandSoldering";2;"1KΩ";;;
+19;"U1,U2";"TO-220-7C";2;"LM2678T-5.0";;;
+20;"U3";"AB2_SO08";1;"LM2675M-5";;;
+21;"L3";"SELF-WE-PD-XXL";1;"47µH/2A";;;
+22;"D4,D5";"LED-0603";2;"LED";;;
+23;"G***";"Antdroid-logo-8_5-8_5";1;"ANTDROID-LOGO";;;
+24;"C11,C12";"C_Radial_D10_L16_P5";2;"1000µF/16V";;;
