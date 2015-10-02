@@ -1,5 +1,7 @@
 # Antdroid Board
 Shield for Arduino Mega used in [Antdroid](https://github.com/antdroid-hexapod/antdroid).
+![Antdroid Board Complete](https://github.com/antdroid-hexapod/antdroid/wiki/images/board/Antdroid_board.jpg)
+![Antdroid Board Complete Top](https://github.com/antdroid-hexapod/antdroid/wiki/images/board/Antdroid_board_top.jpg)
 ![Antdroid Board](https://raw.githubusercontent.com/antdroid-hexapod/antdroid-board/master/render/antdroid-board-top-no-background.png)
 ## Board features
 * Two power supply of 5V 5A for servos.
